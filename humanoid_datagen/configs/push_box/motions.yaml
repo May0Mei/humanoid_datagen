@@ -1,0 +1,10 @@
+# @package _global_
+# Kimodo motion selection for the push priors (humanoid_datagen/push_box/select_motions.py), run by
+#   sbatch slurm_scripts/data/push_motions.sh
+root: outputs/push_box/priors
+per_task: 4                 # priors per array task (same chunks as the Kimodo step of the script)
+keep: 4                     # motions per prior given to the scene agent
+min_top_clear: 0.05         # palms >= 5 cm below the object's top   } same fit rule as the procedural arm's
+min_palm_frac: 0.35         # palms >= 35% of the object's height     } motion bank (datagen_procthor.yaml)
+min_push: 1.0               # m the hands travel (the videos' pushes are 1-2 m)
+videos: true                # motion_videos/m*.mp4, tracked by SONIC, for review

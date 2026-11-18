@@ -1,0 +1,118 @@
+uv.lock
+
+# Ignore all tmp directories
+tmp/
+**/tmp/
+temp_**/
+**_temp/
+cache/
+**cache**/
+**dev**
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+# *local*
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# Environment variables
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Third-party repos, weights and asset downloads (README)
+utilities/
+
+# Model scripts, checkpoints, analysis, and logs
+*.pth
+*.pt
+*.ckpt
+wandb/
+logs/
+outputs/
+tests/
+slurm_scripts/
+slurm_outputs/
+checkpoints
+cache/
+tmp/
+plots/
+* copy.*
+*_tmp.*
+*compute_perceptual_metrics*.yaml
+
+# Large media files (optional - uncomment if needed)
+*.mp4
+# *.avi
+# *.mov
+# *.mkv
+# *.png
+# *.jpg
+# *.jpeg
+# *.gif

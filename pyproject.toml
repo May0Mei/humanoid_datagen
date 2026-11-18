@@ -1,0 +1,42 @@
+[project]
+name = "humanoid_datagen"
+version = "0.1.0"
+requires-python = ">=3.11, <3.12"
+
+dependencies = [
+    "hydra-core",
+    "omegaconf",
+    "numpy",
+    "scipy",
+    "torch",
+    "torchvision",
+    "transformers>=4.57.0",
+    "accelerate",
+    "peft",
+    "safetensors",
+    "einops",
+    "mujoco>=3.3",
+    "trimesh",
+    "imageio[ffmpeg]",
+    "pillow",
+    "pandas",
+    "tqdm",
+    "loguru",
+    "wandb",
+    "matplotlib",
+    "coacd",
+    "pyyaml",
+    "clean-fid",
+    "pytest",
+    "anthropic",
+    "onnxruntime",          # GEAR-SONIC tracker (push_box/sonic.py)
+]
+
+[tool.setuptools.packages.find]
+include = ["humanoid_datagen*"]
+namespaces = true
+
+# Low-level RL policy: installed in the SEPARATE env humanoid_datagen_rl (bash_scripts/install_rl.bash),
+# because mjlab pins mujoco==3.11 (base env has mujoco 3.17). Not part of the base dependencies.
+[project.optional-dependencies]
+rl = ["mjlab==1.6.0"]

@@ -1,0 +1,8 @@
+# @package _global_
+# Kimodo motion selection for the 1000 written-prompt priors (push_box/prompts), run by
+#   sbatch slurm_scripts/data/push_motions.sh push_box/motions_1000
+defaults:
+  - /push_box/motions
+  - _self_
+
+root: outputs/push_box/priors_1000

@@ -1,0 +1,2771 @@
+{
+ "note": "Held-out library assets for the push test set: excluded from the agents' library (agent_batch.yaml library_exclude) and never used by the ProcTHOR arm. Review sheets: outputs/eval/push/test_split_review/<type>.png; move entries between held_out and alternates by hand.",
+ "n_per_type": 4,
+ "held_out": {
+  "cardboard_box": [
+   {
+    "uid": "Box_3",
+    "category": "box",
+    "source": "thor",
+    "description": "A medium-sized brown corrugated cardboard box with open flaps, rectangular in shape and hollow inside.",
+    "size": [
+     0.6900328397750854,
+     0.4841551184654236,
+     0.47454917430877686
+    ],
+    "score": 0.63,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "Box_10",
+    "category": "box",
+    "source": "thor",
+    "description": "A light brown rectangular cardboard box with open flaps, showing a rough, matte texture and hollow interior.",
+    "size": [
+     0.5144988298416138,
+     0.4144476652145386,
+     0.38171643018722534
+    ],
+    "score": 0.597,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "Box_4",
+    "category": "box",
+    "source": "thor",
+    "description": "A plain, light brown corrugated cardboard box with an open top and four outward flaps, rectangular in shape with a hollow interior.",
+    "size": [
+     0.4314385652542114,
+     0.44546276330947876,
+     0.4683290421962738
+    ],
+    "score": 0.593,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "d38da14d925248abb9541acad6ef2c13",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rustic wooden crate with a natural, weathered texture and reinforced edges.",
+    "size": [
+     0.6414294242858887,
+     0.5,
+     0.5
+    ],
+    "score": 0.549,
+    "license": "by"
+   }
+  ],
+  "wardrobe_box": [
+   {
+    "uid": "5297dab6f7a24b80887f02b855e5fc35",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A large, green rectangular box with bold black numerals and blue patterns, suitable for storage or transport.",
+    "size": [
+     0.8366268873214722,
+     0.4505356252193451,
+     1.0
+    ],
+    "score": 0.391,
+    "license": "by"
+   },
+   {
+    "uid": "245b3b1697e3491abb78cf2dadb65d4b",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A large, orange rectangular box with bold black text reading '421 FLOPERFUTUYO TOTAL'.",
+    "size": [
+     0.8258144855499268,
+     0.44471269845962524,
+     0.9999999403953552
+    ],
+    "score": 0.389,
+    "license": "by"
+   },
+   {
+    "uid": "551190b3c23d4d98abb1399fb353c89a",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A large, rustic wooden crate with X-shaped braces and red stenciled text on top.",
+    "size": [
+     0.607916533946991,
+     0.6079168319702148,
+     1.0
+    ],
+    "score": 0.386,
+    "license": "by"
+   }
+  ],
+  "beer_case": [
+   {
+    "uid": "e55a098ca77b4da88ed36c7d5f482188",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rugged, industrial storage box with caution symbols and leather straps, featuring a weathered metallic finish.",
+    "size": [
+     0.485260933637619,
+     0.30364179611206055,
+     0.40000027418136597
+    ],
+    "score": 0.426,
+    "license": "by"
+   },
+   {
+    "uid": "80ad4238859c41c1b3e62d4c215410c1",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A red, industrial-style container with a digital keypad and black handles, designed for secure storage.",
+    "size": [
+     0.626732587814331,
+     0.29057925939559937,
+     0.294443279504776
+    ],
+    "score": 0.385,
+    "license": "by"
+   },
+   {
+    "uid": "32e84dc25efe4ca7b256c2ecdaa217cb",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A green rectangular storage box with a hinged lid and a brown interior, ideal for home or office use.",
+    "size": [
+     0.48077845573425293,
+     0.3172503113746643,
+     0.304242342710495
+    ],
+    "score": 0.373,
+    "license": "by"
+   },
+   {
+    "uid": "b121181bf8174c30a1c7fa9b5ef7edfb",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A cardboard box with printed handling instructions and recycling symbols, used for packaging or storage.",
+    "size": [
+     0.2999348044395447,
+     0.29993438720703125,
+     0.2999894767999649
+    ],
+    "score": 0.37,
+    "license": "by"
+   }
+  ],
+  "plastic_crate": [
+   {
+    "uid": "5ed694999b6f48d6918e2c5ce21e88f8",
+    "category": "basket",
+    "source": "objaverse",
+    "description": "A tall, blue plastic basket with a grid-like, lattice structure and a reinforced top edge.",
+    "size": [
+     0.42878806591033936,
+     0.4287840723991394,
+     0.6098310649394989
+    ],
+    "score": 0.58,
+    "license": "by"
+   },
+   {
+    "uid": "d38da14d925248abb9541acad6ef2c13",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rustic wooden crate with a natural, weathered texture and reinforced edges.",
+    "size": [
+     0.6414294242858887,
+     0.5,
+     0.5
+    ],
+    "score": 0.56,
+    "license": "by"
+   },
+   {
+    "uid": "ec30b6bb43324ecab0d8cb0630465c84",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A wooden crate with a natural texture and visible grain patterns, featuring a sturdy and rustic design.",
+    "size": [
+     0.5,
+     0.5,
+     0.5000000149011612
+    ],
+    "score": 0.542,
+    "license": "by"
+   },
+   {
+    "uid": "f69ade438af5487e9681b54a9e93c15a",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rugged, gray storage box with a weathered texture and a snowflake symbol, indicating cold storage use.",
+    "size": [
+     0.5594815611839294,
+     0.32471662759780884,
+     0.5
+    ],
+    "score": 0.525,
+    "license": "by"
+   }
+  ],
+  "side_table": [
+   {
+    "uid": "af67050e1d854f04bfeee61d01c0cd29",
+    "category": "sidetable",
+    "source": "objaverse",
+    "description": "A minimalist wooden side table with a light wood finish, featuring a seamless drawer and cylindrical legs.",
+    "size": [
+     0.5809580087661743,
+     0.40475699305534363,
+     0.6047276854515076
+    ],
+    "score": 0.574,
+    "license": "by"
+   },
+   {
+    "uid": "9dbdd81b8f564ceea9df346b9d19b1cb",
+    "category": "sidetable",
+    "source": "objaverse",
+    "description": "A round, wooden side table with a hollowed-out base and a smooth, polished surface, perfect for rustic or modern interiors.",
+    "size": [
+     0.4761689007282257,
+     0.4523478150367737,
+     0.5079229027032852
+    ],
+    "score": 0.566,
+    "license": "by"
+   },
+   {
+    "uid": "cf3e112a4441414db938f3020ec8514f",
+    "category": "sidetable",
+    "source": "objaverse",
+    "description": "A modern nightstand with a wood grain finish, featuring a drawer and an open shelf, supported by four legs.",
+    "size": [
+     0.5047670602798462,
+     0.5428630113601685,
+     0.6095300316810608
+    ],
+    "score": 0.565,
+    "license": "by"
+   },
+   {
+    "uid": "4fc2a8f22fad4a559e91fafe06dad9a3",
+    "category": "sidetable",
+    "source": "objaverse",
+    "description": "A modern, minimalist side table with a geometric design, featuring a yellow and beige color scheme and an open, lightweight structure.",
+    "size": [
+     0.6035319566726685,
+     0.6035320162773132,
+     0.6035339832305908
+    ],
+    "score": 0.562,
+    "license": "by"
+   }
+  ],
+  "dining_table": [
+   {
+    "uid": "1d4aae72226d4b958a8d6fe473d68f8a",
+    "category": "table",
+    "source": "objaverse",
+    "description": "A minimalist, modern table with a sleek rectangular design and light-colored material, suitable for various indoor settings.",
+    "size": [
+     0.7532994747161865,
+     0.7565885782241821,
+     0.7532914578914642
+    ],
+    "score": 0.593,
+    "license": "by"
+   },
+   {
+    "uid": "RoboTHOR_dining_table_jokkmokk_v",
+    "category": "diningtable",
+    "source": "thor",
+    "description": "A rectangular wooden dining table with a smooth natural finish, four straight legs, and a simple, sturdy design.",
+    "size": [
+     1.2033919095993042,
+     0.7672141790390015,
+     0.7416955232620239
+    ],
+    "score": 0.581,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "3f581e9cf58049089c3f43c294cdd6af",
+    "category": "table",
+    "source": "objaverse",
+    "description": "A minimalist, modern table with a sleek, rectangular design and a small black accent.",
+    "size": [
+     0.7596044540405273,
+     0.7596042156219482,
+     0.7596042156219482
+    ],
+    "score": 0.557,
+    "license": "by"
+   },
+   {
+    "uid": "d043545e915c45a0ac8c5d07d344ed9f",
+    "category": "table",
+    "source": "objaverse",
+    "description": "A modern, minimalist table with a red and white color scheme, featuring a clean, geometric design.",
+    "size": [
+     0.7587156891822815,
+     0.7587153911590576,
+     0.7587155103683472
+    ],
+    "score": 0.541,
+    "license": "by"
+   }
+  ],
+  "desk": [
+   {
+    "uid": "5b9584fb6872477892970ef93da16b0a",
+    "category": "desk",
+    "source": "objaverse",
+    "description": "A modern wooden desk with a flat top, two drawers on the right, and an open left side for legroom.",
+    "size": [
+     0.9705421924591064,
+     0.5502341389656067,
+     0.7642140686511993
+    ],
+    "score": 0.607,
+    "license": "by"
+   },
+   {
+    "uid": "RoboTHOR_desk_alve",
+    "category": "desk",
+    "source": "thor",
+    "description": "A sturdy wooden desk with a natural finish, featuring a rectangular tabletop, a raised back panel, and a fold-out side surface for extra workspace.",
+    "size": [
+     0.8663997650146484,
+     0.9260790348052979,
+     1.01332426071167
+    ],
+    "score": 0.607,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "72338ff133994d6683bdb6a4962cb503",
+    "category": "desk",
+    "source": "objaverse",
+    "description": "A modern office desk with a minimalist design, featuring an open storage space and a slatted panel.",
+    "size": [
+     1.0839260816574097,
+     0.8298811912536621,
+     0.762136310338974
+    ],
+    "score": 0.591,
+    "license": "by"
+   },
+   {
+    "uid": "67df5face0f54fbd93588c39b1f468e6",
+    "category": "desk",
+    "source": "objaverse",
+    "description": "A wooden desk with two drawers and a dark brown finish, ideal for an office or study.",
+    "size": [
+     1.227518081665039,
+     0.7102071046829224,
+     0.7628151774406433
+    ],
+    "score": 0.587,
+    "license": "by"
+   }
+  ],
+  "ottoman": [
+   {
+    "uid": "31a4a8aaa9ba45ee95ef05c6846a5d69",
+    "category": "ottoman",
+    "source": "objaverse",
+    "description": "A beige, tufted ottoman with a leather-like texture, perfect for use as a footrest or extra seating.",
+    "size": [
+     0.4499998986721039,
+     0.4500000476837158,
+     0.45000001788139343
+    ],
+    "score": 0.606,
+    "license": "by"
+   },
+   {
+    "uid": "23fcd7e2821b4c3ea6d6fb41a7a92296",
+    "category": "ottoman",
+    "source": "objaverse",
+    "description": "A plush, brown leather ottoman with a quilted diamond pattern and a smooth, cushioned top.",
+    "size": [
+     0.5259385108947754,
+     0.4836757183074951,
+     0.4456862211227417
+    ],
+    "score": 0.563,
+    "license": "by"
+   },
+   {
+    "uid": "Ottoman_205_1",
+    "category": "ottoman",
+    "source": "thor",
+    "description": "A deep burgundy rectangular ottoman with a cushioned top and subtly curved, padded sides, upholstered in soft woven fabric.",
+    "size": [
+     0.7672807574272156,
+     0.45911043882369995,
+     0.4846244752407074
+    ],
+    "score": 0.536,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "Ottoman_203_1",
+    "category": "ottoman",
+    "source": "thor",
+    "description": "A modern rectangular ottoman with a deep purple cushioned top and a dark gray leather or faux leather base, featuring clean lines and a boxy shape.",
+    "size": [
+     0.8587265610694885,
+     0.5190824270248413,
+     0.41521066427230835
+    ],
+    "score": 0.526,
+    "license": "cc-by-4.0 (thor)"
+   }
+  ],
+  "laundry_hamper": [
+   {
+    "uid": "Laundry_Hamper_1_1",
+    "category": "laundryhamper",
+    "source": "thor",
+    "description": "A cylindrical laundry hamper with vertical muted stripes, featuring a lid with a top handle and two side handles, made of woven or fabric-covered material.",
+    "size": [
+     0.45128363370895386,
+     0.35056567192077637,
+     0.6036199927330017
+    ],
+    "score": 0.634,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "Laundry_Hamper_1_4",
+    "category": "laundryhamper",
+    "source": "thor",
+    "description": "A cylindrical gray fabric laundry hamper with a fitted lid and three handles for carrying and lid removal.",
+    "size": [
+     0.656684935092926,
+     0.510125458240509,
+     0.8759903907775879
+    ],
+    "score": 0.633,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "Laundry_Hamper_1_3",
+    "category": "laundryhamper",
+    "source": "thor",
+    "description": "A tall cylindrical laundry hamper made of woven natural fiber with a fitted lid and loop handles on the top and sides for carrying.",
+    "size": [
+     0.6574568152427673,
+     0.5107249021530151,
+     0.8836627006530762
+    ],
+    "score": 0.625,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "69b8f5e8171b4f9f84b3951ee3cafe74",
+    "category": "laundryhamper",
+    "source": "objaverse",
+    "description": "A white plastic laundry basket with circular ventilation holes and a rounded rim.",
+    "size": [
+     0.44592151045799255,
+     0.4463905692100525,
+     0.6099144816398621
+    ],
+    "score": 0.605,
+    "license": "by"
+   }
+  ],
+  "storage_chest": [
+   {
+    "uid": "d38da14d925248abb9541acad6ef2c13",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rustic wooden crate with a natural, weathered texture and reinforced edges.",
+    "size": [
+     0.6414294242858887,
+     0.5,
+     0.5
+    ],
+    "score": 0.61,
+    "license": "by"
+   },
+   {
+    "uid": "e30f6b8aca7c4af081f6b5f6997ea551",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A vintage wooden trunk with a curved top, metal bands, and a rustic, weathered appearance.",
+    "size": [
+     0.8179200291633606,
+     0.5182242393493652,
+     0.6023522019386292
+    ],
+    "score": 0.602,
+    "license": "by"
+   },
+   {
+    "uid": "a5aacf63e4c24f139b324edea60d749a",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A dark wooden storage chest with horizontal slats and metal fasteners, ideal for home or office use.",
+    "size": [
+     0.4999920725822449,
+     0.9906732439994812,
+     0.49999022483825684
+    ],
+    "score": 0.599,
+    "license": "by"
+   },
+   {
+    "uid": "e6ebb3b9af6b4668a739b3622dd4dd35",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rectangular wooden crate with visible wood grain and horizontal slats, suitable for storage or decoration.",
+    "size": [
+     0.824730396270752,
+     0.5000009536743164,
+     0.5000009536743164
+    ],
+    "score": 0.569,
+    "license": "by"
+   }
+  ],
+  "office_chair": [
+   {
+    "uid": "Chair_313_1",
+    "category": "chair",
+    "source": "thor",
+    "description": "A modern office chair with a round cushioned backrest and padded seat upholstered in dark fabric, supported by a metal base with caster wheels and adjustable height.",
+    "size": [
+     0.645294725894928,
+     0.6423048377037048,
+     0.8486196398735046
+    ],
+    "score": 0.615,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "RoboTHOR_office_chair_sevnning",
+    "category": "chair",
+    "source": "thor",
+    "description": "A gray fabric upholstered office chair with a rounded backrest and seat, supported by a flexible black spine and a five-legged wheeled base.",
+    "size": [
+     0.5663411617279053,
+     0.6543723344802856,
+     0.9110180139541626
+    ],
+    "score": 0.589,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "RoboTHOR_office_chair_volmar",
+    "category": "chair",
+    "source": "thor",
+    "description": "A modern office chair with a high, ergonomically curved backrest and cushioned seat upholstered in light gray fabric, supported by a black metal base with caster wheels and adjustable mechanisms.",
+    "size": [
+     0.6229713559150696,
+     0.6252336502075195,
+     1.028257131576538
+    ],
+    "score": 0.575,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "RoboTHOR_office_chair_jules",
+    "category": "chair",
+    "source": "thor",
+    "description": "A modern office chair with a light wood curved seat and backrest featuring nine circular cutouts, supported by a dark metal base with five caster wheels.",
+    "size": [
+     0.5409491062164307,
+     0.5770102739334106,
+     0.941869854927063
+    ],
+    "score": 0.558,
+    "license": "cc-by-4.0 (thor)"
+   }
+  ],
+  "laundry_cart": [
+   {
+    "uid": "561960f6df8a49aca4f3ff54a7d82b8c",
+    "category": "laundryhamper",
+    "source": "objaverse",
+    "description": "A tall, rectangular laundry basket with circular ventilation holes and integrated handles, made of light gray plastic.",
+    "size": [
+     0.466508686542511,
+     0.4665156900882721,
+     0.6093378663063049
+    ],
+    "score": 0.492,
+    "license": "by"
+   },
+   {
+    "uid": "Laundry_Hamper_1_4",
+    "category": "laundryhamper",
+    "source": "thor",
+    "description": "A cylindrical gray fabric laundry hamper with a fitted lid and three handles for carrying and lid removal.",
+    "size": [
+     0.656684935092926,
+     0.510125458240509,
+     0.8759903907775879
+    ],
+    "score": 0.481,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "69b8f5e8171b4f9f84b3951ee3cafe74",
+    "category": "laundryhamper",
+    "source": "objaverse",
+    "description": "A white plastic laundry basket with circular ventilation holes and a rounded rim.",
+    "size": [
+     0.44592151045799255,
+     0.4463905692100525,
+     0.6099144816398621
+    ],
+    "score": 0.462,
+    "license": "by"
+   },
+   {
+    "uid": "5ed694999b6f48d6918e2c5ce21e88f8",
+    "category": "basket",
+    "source": "objaverse",
+    "description": "A tall, blue plastic basket with a grid-like, lattice structure and a reinforced top edge.",
+    "size": [
+     0.42878806591033936,
+     0.4287840723991394,
+     0.6098310649394989
+    ],
+    "score": 0.462,
+    "license": "by"
+   }
+  ],
+  "suitcase": [
+   {
+    "uid": "9995e822288047cca053c6c4dc2b6d4c",
+    "category": "bag",
+    "source": "objaverse",
+    "description": "A camouflage-patterned backpack with multiple compartments and adjustable straps, designed for durability and functionality.",
+    "size": [
+     0.3370726704597473,
+     0.3637946844100952,
+     0.4991479516029358
+    ],
+    "score": 0.479,
+    "license": "by"
+   },
+   {
+    "uid": "3332d553351b4cf7ad1e12575ec3ac97",
+    "category": "bag",
+    "source": "objaverse",
+    "description": "A sleek, black backpack with a modern design, featuring yellow accents and ergonomic straps.",
+    "size": [
+     0.32848966121673584,
+     0.3195488452911377,
+     0.4527258723974228
+    ],
+    "score": 0.44,
+    "license": "by"
+   },
+   {
+    "uid": "607d6c0e703e43dfa62b0781c5cc2752",
+    "category": "bag",
+    "source": "objaverse",
+    "description": "A brown backpack with a flap closure and side pockets, featuring a rugged fabric texture and a utilitarian design.",
+    "size": [
+     0.41428500413894653,
+     0.3999999761581421,
+     0.45714202523231506
+    ],
+    "score": 0.431,
+    "license": "by"
+   },
+   {
+    "uid": "e2aba7841070473b82149e440a8d7440",
+    "category": "bag",
+    "source": "objaverse",
+    "description": "A modern, angular backpack with a red body, blue top flap, and brown straps, designed for functionality and style.",
+    "size": [
+     0.29793471097946167,
+     0.3498619794845581,
+     0.45005297660827637
+    ],
+    "score": 0.428,
+    "license": "by"
+   }
+  ],
+  "rolling_bookshelf": [
+   {
+    "uid": "b02c7301b23d40fb926f7c3c6b32cb9f",
+    "category": "shelvingunit",
+    "source": "objaverse",
+    "description": "A dark wooden bookshelf with four shelves and a modern, angled design.",
+    "size": [
+     0.9673851728439331,
+     0.4456525444984436,
+     1.5108717679977417
+    ],
+    "score": 0.627,
+    "license": "by"
+   },
+   {
+    "uid": "9fc1224b0a144775bdc7cf9eb20080cd",
+    "category": "shelvingunit",
+    "source": "objaverse",
+    "description": "A wooden shelving unit with four shelves and a dark brown finish, offering a modern and minimalistic design.",
+    "size": [
+     1.0731710195541382,
+     0.45121997594833374,
+     1.5121960639953613
+    ],
+    "score": 0.598,
+    "license": "by"
+   },
+   {
+    "uid": "207904bf9d0a45768105bde636ed49f4",
+    "category": "shelvingunit",
+    "source": "objaverse",
+    "description": "A modern bookcase with four wooden shelves and a sleek metal frame, perfect for contemporary interiors.",
+    "size": [
+     1.2516810894012451,
+     0.29801905155181885,
+     1.509964942932129
+    ],
+    "score": 0.585,
+    "license": "by"
+   },
+   {
+    "uid": "561b498dcd064ef4ad858b46f5144625",
+    "category": "shelvingunit",
+    "source": "objaverse",
+    "description": "A modern, minimalist shelving unit with a sleek, rectangular design and a combination of open and closed sections.",
+    "size": [
+     0.9496009349822998,
+     0.41102153062820435,
+     1.814163625240326
+    ],
+    "score": 0.575,
+    "license": "by"
+   }
+  ],
+  "armchair": [
+   {
+    "uid": "Armchair_205_1_2",
+    "category": "armchair",
+    "source": "thor",
+    "description": "A deep red upholstered armchair with wide, padded armrests and a thick cushioned backrest, designed for comfort and support.",
+    "size": [
+     1.1655244827270508,
+     1.0090010166168213,
+     0.9975916147232056
+    ],
+    "score": 0.598,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "Armchair_222_1",
+    "category": "armchair",
+    "source": "thor",
+    "description": "A dark leather armchair with wide, padded armrests, a cushioned backrest with a separate pillow, and a thick seat cushion, all featuring a textured, luxurious finish.",
+    "size": [
+     1.139786720275879,
+     0.975113034248352,
+     0.9451475739479065
+    ],
+    "score": 0.581,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "Armchair_220_1",
+    "category": "armchair",
+    "source": "thor",
+    "description": "A plush gray upholstered armchair with a high backrest, rounded armrests, and slender dark legs, designed for comfort and style.",
+    "size": [
+     0.7578128576278687,
+     0.6973731517791748,
+     1.1187329292297363
+    ],
+    "score": 0.572,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "Armchair_201_2",
+    "category": "armchair",
+    "source": "thor",
+    "description": "A dark leather armchair with tufted cushions, wide padded armrests, and a smooth back, designed for comfort and elegance.",
+    "size": [
+     1.0000028610229492,
+     0.979020893573761,
+     0.92230224609375
+    ],
+    "score": 0.566,
+    "license": "cc-by-4.0 (thor)"
+   }
+  ],
+  "bench": [
+   {
+    "uid": "d922addebf574fc89bbb8c78ce9d4938",
+    "category": "bench",
+    "source": "objaverse",
+    "description": "A rectangular wooden storage bench with a minimalist design and light wood finish, ideal for seating or storage.",
+    "size": [
+     1.5076968669891357,
+     0.4780499339103699,
+     0.46579286456108093
+    ],
+    "score": 0.587,
+    "license": "by"
+   },
+   {
+    "uid": "9d875872e3c343d0b7752e08028057d3",
+    "category": "bench",
+    "source": "objaverse",
+    "description": "A rectangular storage bench with a flat top and earthy brown color, ideal for seating or storage.",
+    "size": [
+     0.9757830500602722,
+     0.4165149927139282,
+     0.45000000298023224
+    ],
+    "score": 0.553,
+    "license": "by"
+   },
+   {
+    "uid": "8d510341c9d9495697e46593c0699386",
+    "category": "bench",
+    "source": "objaverse",
+    "description": "A rectangular storage bench with a cushioned top and recessed front panels, ideal for indoor use.",
+    "size": [
+     0.9315359592437744,
+     0.38719698786735535,
+     0.45000001788139343
+    ],
+    "score": 0.55,
+    "license": "by"
+   },
+   {
+    "uid": "25d4b22f29fd46218c3d952e347bd2db",
+    "category": "bench",
+    "source": "objaverse",
+    "description": "A rectangular wooden bench with a minimalist design, featuring a smooth top and three drawers for storage.",
+    "size": [
+     1.3615355491638184,
+     0.4153658449649811,
+     0.46153780817985535
+    ],
+    "score": 0.538,
+    "license": "by"
+   }
+  ],
+  "nightstand": [
+   {
+    "uid": "cf3e112a4441414db938f3020ec8514f",
+    "category": "sidetable",
+    "source": "objaverse",
+    "description": "A modern nightstand with a wood grain finish, featuring a drawer and an open shelf, supported by four legs.",
+    "size": [
+     0.5047670602798462,
+     0.5428630113601685,
+     0.6095300316810608
+    ],
+    "score": 0.673,
+    "license": "by"
+   },
+   {
+    "uid": "2013150ae762482cbf0dee44a7e89e67",
+    "category": "sidetable",
+    "source": "objaverse",
+    "description": "A rustic wooden nightstand with a drawer and cabinet door, featuring a natural wood finish.",
+    "size": [
+     0.533334493637085,
+     0.42222344875335693,
+     0.7111125588417053
+    ],
+    "score": 0.666,
+    "license": "by"
+   },
+   {
+    "uid": "851f3ad19b0f4dbb9eb1cd5b97dae64f",
+    "category": "sidetable",
+    "source": "objaverse",
+    "description": "A wooden nightstand with a drawer and cabinet, featuring visible wood grain and metal knobs.",
+    "size": [
+     0.5333340167999268,
+     0.4222230315208435,
+     0.7110989093780518
+    ],
+    "score": 0.649,
+    "license": "by"
+   },
+   {
+    "uid": "34da6e887922472f8822326555cb912e",
+    "category": "sidetable",
+    "source": "objaverse",
+    "description": "A wooden nightstand with a drawer and cabinet, featuring a light natural finish and metal knobs.",
+    "size": [
+     0.533334493637085,
+     0.42222344875335693,
+     0.7111125588417053
+    ],
+    "score": 0.647,
+    "license": "by"
+   }
+  ],
+  "pet_crate": [
+   {
+    "uid": "8d1ee0ee7d2e4845ab0a752ee5b58aa7",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rustic wooden crate with horizontal slats and a weathered texture, ideal for storage.",
+    "size": [
+     0.49999991059303284,
+     0.9907267689704895,
+     0.5
+    ],
+    "score": 0.417,
+    "license": "by"
+   },
+   {
+    "uid": "d38da14d925248abb9541acad6ef2c13",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rustic wooden crate with a natural, weathered texture and reinforced edges.",
+    "size": [
+     0.6414294242858887,
+     0.5,
+     0.5
+    ],
+    "score": 0.413,
+    "license": "by"
+   },
+   {
+    "uid": "956cef1ca1af49f5953fc202b20dcfb9",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A wooden crate with vertical slats, metal rivets, and diagonal reinforcements, ideal for storage.",
+    "size": [
+     0.9870439171791077,
+     0.5995989441871643,
+     0.6000003814697266
+    ],
+    "score": 0.407,
+    "license": "by"
+   },
+   {
+    "uid": "7b6478739d0b4961ba079a4b345c78b4",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rectangular wooden crate with a dark top and reinforced sides, set on a blue base.",
+    "size": [
+     0.7538659572601318,
+     1.3556339740753174,
+     0.5144870281219482
+    ],
+    "score": 0.406,
+    "license": "by"
+   }
+  ]
+ },
+ "alternates": {
+  "cardboard_box": [
+   {
+    "uid": "b0cf7e6ecff74ec39267d3aeccfd7f34",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rectangular, brown box-like structure with recessed panels and slits on the top, offering a minimalist and modern design.",
+    "size": [
+     0.500000536441803,
+     0.5000004768371582,
+     0.5
+    ],
+    "score": 0.547,
+    "license": "by"
+   },
+   {
+    "uid": "ec30b6bb43324ecab0d8cb0630465c84",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A wooden crate with a natural texture and visible grain patterns, featuring a sturdy and rustic design.",
+    "size": [
+     0.5,
+     0.5,
+     0.5000000149011612
+    ],
+    "score": 0.518,
+    "license": "by"
+   },
+   {
+    "uid": "4eea583ec55a47e88defa745a355e04e",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rectangular, orange box with recessed panels and a smooth, matte finish, ideal for storage or decoration.",
+    "size": [
+     0.5039684772491455,
+     0.5039684772491455,
+     0.503919243812561
+    ],
+    "score": 0.517,
+    "license": "by"
+   },
+   {
+    "uid": "e78b384a750d458b9bc6247ce00ec3cf",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A wooden crate with a rich brown color and visible wood grain, featuring diagonal planks for reinforcement.",
+    "size": [
+     0.5,
+     0.5,
+     0.5
+    ],
+    "score": 0.511,
+    "license": "by"
+   },
+   {
+    "uid": "52b7d1e80fa94a14af45cfc3b811714f",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A wooden crate with a light tan color and a diagonal plank pattern on each side, ideal for storage or decoration.",
+    "size": [
+     0.4999997615814209,
+     0.4992028474807739,
+     0.4999099373817444
+    ],
+    "score": 0.508,
+    "license": "by"
+   },
+   {
+    "uid": "b08d8a55ccda421d953f46f2274deeb1",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A wooden crate with a light brown finish, featuring diagonal planks and metal rivets for reinforcement.",
+    "size": [
+     0.5039685368537903,
+     0.5039684772491455,
+     0.507738471031189
+    ],
+    "score": 0.502,
+    "license": "by"
+   },
+   {
+    "uid": "37abbe8868e44a3c895bc79791425817",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rustic wooden crate with a weathered texture and reinforced diagonal planks.",
+    "size": [
+     0.5,
+     0.5,
+     0.5
+    ],
+    "score": 0.498,
+    "license": "by"
+   },
+   {
+    "uid": "6848b61e1ceb456b81942f7760bad6d7",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A wooden crate with recessed panels and diagonal planks forming a 'Z' shape on each side, finished in a warm brown varnish.",
+    "size": [
+     0.5188881158828735,
+     0.5205709338188171,
+     0.5000000596046448
+    ],
+    "score": 0.493,
+    "license": "by"
+   }
+  ],
+  "wardrobe_box": [],
+  "beer_case": [
+   {
+    "uid": "53d37f066180402ea4839dc3249e1f50",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A mustard-yellow storage box labeled 'Patient Files', designed for document storage with a simple, functional design.",
+    "size": [
+     0.4970250129699707,
+     0.3190770149230957,
+     0.30000001192092896
+    ],
+    "score": 0.367,
+    "license": "by"
+   },
+   {
+    "uid": "776ebba553cc486aa13b10db6ddb4d3d",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A robust black storage box with a vibrant green lid, featuring a geometric design and secure latches.",
+    "size": [
+     0.5212860107421875,
+     0.32557785511016846,
+     0.2950948178768158
+    ],
+    "score": 0.358,
+    "license": "by"
+   },
+   {
+    "uid": "8c7cf9c789d944bc8e1dddd04762b4ee",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rectangular, open-top container with a white exterior and light yellow interior, featuring a minimalist design.",
+    "size": [
+     0.27201634645462036,
+     0.47943049669265747,
+     0.3026193678379059
+    ],
+    "score": 0.339,
+    "license": "by"
+   },
+   {
+    "uid": "Box_12",
+    "category": "box",
+    "source": "thor",
+    "description": "A medium-sized brown corrugated cardboard box with open flaps, empty inside and suitable for packaging or storage.",
+    "size": [
+     0.4398658871650696,
+     0.45967918634414673,
+     0.32326433062553406
+    ],
+    "score": 0.338,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "Box_25",
+    "category": "box",
+    "source": "thor",
+    "description": "A light brown corrugated cardboard box with open flaps, rectangular in shape and hollow inside, used for packaging or storage.",
+    "size": [
+     0.38906681537628174,
+     0.4031125605106354,
+     0.21199239790439606
+    ],
+    "score": 0.336,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "Box_13",
+    "category": "box",
+    "source": "thor",
+    "description": "A medium-sized, light brown corrugated cardboard box with open flaps and a hollow interior.",
+    "size": [
+     0.3501453399658203,
+     0.3436603248119354,
+     0.3132283687591553
+    ],
+    "score": 0.333,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "Box_23",
+    "category": "box",
+    "source": "thor",
+    "description": "A brown corrugated cardboard box with open flaps, rectangular in shape and hollow inside, used for packaging and storage.",
+    "size": [
+     0.5114727020263672,
+     0.41517373919487,
+     0.26866430044174194
+    ],
+    "score": 0.331,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "Box_5",
+    "category": "box",
+    "source": "thor",
+    "description": "A lightweight rectangular cardboard box with open flaps, made of brown corrugated cardboard, measuring about 20 cm tall, 30 cm wide, and 40 cm deep.",
+    "size": [
+     0.3373812437057495,
+     0.43224620819091797,
+     0.23140719532966614
+    ],
+    "score": 0.33,
+    "license": "cc-by-4.0 (thor)"
+   }
+  ],
+  "plastic_crate": [
+   {
+    "uid": "37abbe8868e44a3c895bc79791425817",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rustic wooden crate with a weathered texture and reinforced diagonal planks.",
+    "size": [
+     0.5,
+     0.5,
+     0.5
+    ],
+    "score": 0.523,
+    "license": "by"
+   },
+   {
+    "uid": "8050cfb199424a5c80025ff5be6a90da",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rustic wooden crate with visible wood grain and a sturdy, reinforced frame, ideal for storage or decoration.",
+    "size": [
+     0.5000004768371582,
+     0.5000004768371582,
+     0.5
+    ],
+    "score": 0.516,
+    "license": "by"
+   },
+   {
+    "uid": "76563bcfa9be4a1d9977fb8057f3021d",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A wooden crate with reinforced corners and a diagonal support plank on one side, ideal for storage.",
+    "size": [
+     0.5,
+     0.5,
+     0.5
+    ],
+    "score": 0.515,
+    "license": "by"
+   },
+   {
+    "uid": "e6ebb3b9af6b4668a739b3622dd4dd35",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rectangular wooden crate with visible wood grain and horizontal slats, suitable for storage or decoration.",
+    "size": [
+     0.824730396270752,
+     0.5000009536743164,
+     0.5000009536743164
+    ],
+    "score": 0.514,
+    "license": "by"
+   },
+   {
+    "uid": "4b263348431b4389b5130b748b709529",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rustic wooden crate with detailed wood grain texture and beveled edges, suitable for storage or decoration.",
+    "size": [
+     0.5,
+     0.5,
+     0.5
+    ],
+    "score": 0.514,
+    "license": "by"
+   },
+   {
+    "uid": "e3d28114b208463593282d6abdb7e6ea",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rustic wooden crate with diagonal reinforcements and stenciled symbols, ideal for storage or transport.",
+    "size": [
+     0.5999997854232788,
+     0.6000002026557922,
+     0.5999410152435303
+    ],
+    "score": 0.511,
+    "license": "by"
+   },
+   {
+    "uid": "3af0c95925984efd9015899b5cbe4c7f",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A white wooden crate with vertical slats and diagonal support beams, ideal for storage or decoration.",
+    "size": [
+     0.4977484941482544,
+     0.4976555109024048,
+     0.49637702107429504
+    ],
+    "score": 0.511,
+    "license": "by"
+   },
+   {
+    "uid": "ae6a2752a2c14ecfbbef1914b6c00205",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rustic wooden crate with diagonal planks and reinforced sides, ideal for storage.",
+    "size": [
+     0.8350127339363098,
+     0.5517995357513428,
+     0.5984445810317993
+    ],
+    "score": 0.511,
+    "license": "by"
+   }
+  ],
+  "side_table": [
+   {
+    "uid": "c6535f6a14164b128a36037086a15f76",
+    "category": "sidetable",
+    "source": "objaverse",
+    "description": "A modern side table with a round, recessed top and slender legs, made of dark metal.",
+    "size": [
+     0.474839448928833,
+     0.4788864254951477,
+     0.6043485999107361
+    ],
+    "score": 0.561,
+    "license": "by"
+   },
+   {
+    "uid": "Side_Table_229_1_1",
+    "category": "sidetable",
+    "source": "thor",
+    "description": "A light wood side table with a rectangular top, four angled legs, and a solid apron, featuring a smooth finish and natural wood grain.",
+    "size": [
+     0.5327025651931763,
+     0.5767245888710022,
+     0.7433952689170837
+    ],
+    "score": 0.558,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "a130a5950caa471aacf55c1630938300",
+    "category": "sidetable",
+    "source": "objaverse",
+    "description": "A modern side table with a white frame and wood grain accents, featuring a single drawer and minimalist design.",
+    "size": [
+     0.6087816953659058,
+     0.4478445053100586,
+     0.6087889075279236
+    ],
+    "score": 0.557,
+    "license": "by"
+   },
+   {
+    "uid": "Side_Table_210_2_1",
+    "category": "sidetable",
+    "source": "thor",
+    "description": "A compact wooden side table with an hourglass shape, smooth polished surface, and visible wood grain.",
+    "size": [
+     0.3790040612220764,
+     0.3790040612220764,
+     0.39074447751045227
+    ],
+    "score": 0.555,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "Side_Table_313_1",
+    "category": "sidetable",
+    "source": "thor",
+    "description": "A minimalist dark rectangular side table with a recessed open shelf near the top and a slightly overhanging flat top surface.",
+    "size": [
+     0.6481485366821289,
+     0.3109939992427826,
+     0.7129651308059692
+    ],
+    "score": 0.552,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "2013150ae762482cbf0dee44a7e89e67",
+    "category": "sidetable",
+    "source": "objaverse",
+    "description": "A rustic wooden nightstand with a drawer and cabinet door, featuring a natural wood finish.",
+    "size": [
+     0.533334493637085,
+     0.42222344875335693,
+     0.7111125588417053
+    ],
+    "score": 0.552,
+    "license": "by"
+   },
+   {
+    "uid": "fd24b82064454f61898253532a9bd293",
+    "category": "sidetable",
+    "source": "objaverse",
+    "description": "A small, round wooden side table with a polished surface and a hollowed-out base for storage or decoration.",
+    "size": [
+     0.4761682450771332,
+     0.45234715938568115,
+     0.5079222470521927
+    ],
+    "score": 0.551,
+    "license": "by"
+   },
+   {
+    "uid": "3553dea24fe44ac5a7f056842ca78d0f",
+    "category": "sidetable",
+    "source": "objaverse",
+    "description": "A small wooden side table with a single drawer, featuring a light wood finish and brass-colored knobs.",
+    "size": [
+     0.5439617037773132,
+     0.39521703124046326,
+     0.604744166135788
+    ],
+    "score": 0.551,
+    "license": "by"
+   }
+  ],
+  "dining_table": [
+   {
+    "uid": "Dining_Table_218_1",
+    "category": "diningtable",
+    "source": "thor",
+    "description": "A polished wooden dining table with a rectangular top and four curved, tapered legs, featuring a sturdy apron for support and a warm natural wood finish.",
+    "size": [
+     1.7881654500961304,
+     1.000002384185791,
+     0.7810443639755249
+    ],
+    "score": 0.535,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "1024f696f6f146c0b92f9521caa006b2",
+    "category": "table",
+    "source": "objaverse",
+    "description": "A modern, minimalist table with a yellow top and white legs, designed for simplicity and functionality.",
+    "size": [
+     0.7569455504417419,
+     0.7569454908370972,
+     0.7569374442100525
+    ],
+    "score": 0.524,
+    "license": "by"
+   },
+   {
+    "uid": "Dining_Table_221_1",
+    "category": "diningtable",
+    "source": "thor",
+    "description": "A minimalist rectangular white dining table with a smooth tabletop and four tapered legs, designed for modern interiors.",
+    "size": [
+     1.785942554473877,
+     0.789791464805603,
+     0.7820831537246704
+    ],
+    "score": 0.52,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "476403d5a15e4ce9ae514a7eae3fe3ef",
+    "category": "table",
+    "source": "objaverse",
+    "description": "A minimalist, open-frame structure with a rectangular shape and sleek, angular design, resembling a modern table or stand.",
+    "size": [
+     0.7572145462036133,
+     0.7572145462036133,
+     0.7572054862976074
+    ],
+    "score": 0.518,
+    "license": "by"
+   },
+   {
+    "uid": "RoboTHOR_dining_table_extendable",
+    "category": "diningtable",
+    "source": "thor",
+    "description": "A rectangular light wood dining table with a smooth flat top, four straight legs with a stepped design, and a supportive apron underneath.",
+    "size": [
+     1.7416365146636963,
+     0.9261837005615234,
+     0.7443102598190308
+    ],
+    "score": 0.515,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "df89dcb5e9a548a8bac20ec2d35f88ff",
+    "category": "table",
+    "source": "objaverse",
+    "description": "A rectangular wooden table with a dark brown finish and a single drawer, supported by four sturdy legs.",
+    "size": [
+     1.7859286069869995,
+     1.1279621124267578,
+     0.7637245059013367
+    ],
+    "score": 0.511,
+    "license": "by"
+   },
+   {
+    "uid": "Dining_Table_203_1",
+    "category": "diningtable",
+    "source": "thor",
+    "description": "A rectangular wooden dining table with a polished brown finish, four tapered legs, and a simple, sturdy design.",
+    "size": [
+     1.4727267026901245,
+     0.9877018928527832,
+     0.750335156917572
+    ],
+    "score": 0.509,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "Dining_Table_201_1",
+    "category": "diningtable",
+    "source": "thor",
+    "description": "A rectangular dining table with a transparent glass top and four curved polished wooden legs, combining modern and classic design elements.",
+    "size": [
+     1.7791239023208618,
+     0.987703800201416,
+     0.6782159209251404
+    ],
+    "score": 0.503,
+    "license": "cc-by-4.0 (thor)"
+   }
+  ],
+  "desk": [
+   {
+    "uid": "77a1e518249c45ba97336ac046b36f80",
+    "category": "desk",
+    "source": "objaverse",
+    "description": "A modern, minimalist desk with a light wood finish, featuring a drawer and decorative grooves.",
+    "size": [
+     1.5152924060821533,
+     0.7648898363113403,
+     0.7648908495903015
+    ],
+    "score": 0.576,
+    "license": "by"
+   },
+   {
+    "uid": "Desk_229_1",
+    "category": "desk",
+    "source": "thor",
+    "description": "A light wood rectangular desk with four angled legs and a smooth, polished surface, designed in a simple and functional style.",
+    "size": [
+     1.1359186172485352,
+     0.5339166522026062,
+     0.7478115558624268
+    ],
+    "score": 0.576,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "885a2645a5614538b9d3dea13f26895b",
+    "category": "desk",
+    "source": "objaverse",
+    "description": "A rustic wooden desk with a weathered finish and two drawers, showcasing a prominent wood grain texture.",
+    "size": [
+     1.1512646675109863,
+     0.8814374208450317,
+     0.7735064625740051
+    ],
+    "score": 0.559,
+    "license": "by"
+   },
+   {
+    "uid": "RoboTHOR_desk_gustav",
+    "category": "desk",
+    "source": "thor",
+    "description": "A compact wooden desk with a raised back and side edges on the tabletop, featuring a smooth brown finish and a small semi-circular cutout for cable management.",
+    "size": [
+     1.115541696548462,
+     0.6047376990318298,
+     0.8423842191696167
+    ],
+    "score": 0.559,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "2b124b69cc064e36945e9e60cda66d83",
+    "category": "desk",
+    "source": "objaverse",
+    "description": "A light beige wooden desk with a flat top, open shelf on the left, and three drawers on the right.",
+    "size": [
+     1.3950380086898804,
+     0.8718471527099609,
+     0.7629110217094421
+    ],
+    "score": 0.559,
+    "license": "by"
+   },
+   {
+    "uid": "Desk_328_1",
+    "category": "desk",
+    "source": "thor",
+    "description": "A light wood desk with a rectangular top, supported by a wooden cabinet with storage on one side and two black metal legs on the other.",
+    "size": [
+     1.5876617431640625,
+     0.498465359210968,
+     0.7933336496353149
+    ],
+    "score": 0.557,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "Desk_323_1",
+    "category": "desk",
+    "source": "thor",
+    "description": "A polished wooden desk with three drawers on one side and a plain panel on the other, featuring visible wood grain and simple handles.",
+    "size": [
+     1.3861852884292603,
+     0.5563114285469055,
+     0.9010434150695801
+    ],
+    "score": 0.546,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "Desk_308_2_1",
+    "category": "desk",
+    "source": "thor",
+    "description": "A sturdy wooden desk with a light brown finish, featuring three drawers on one side and an open space with a support bar on the other.",
+    "size": [
+     1.3906900882720947,
+     0.6730109453201294,
+     0.8643419742584229
+    ],
+    "score": 0.544,
+    "license": "cc-by-4.0 (thor)"
+   }
+  ],
+  "ottoman": [
+   {
+    "uid": "Ottoman_210_1",
+    "category": "ottoman",
+    "source": "thor",
+    "description": "A modern rectangular ottoman upholstered in soft taupe fabric with a tufted top cushion featuring a gentle wave pattern, supported by a solid fabric-covered base.",
+    "size": [
+     0.8344361186027527,
+     0.8487259745597839,
+     0.44034361839294434
+    ],
+    "score": 0.517,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "de3673600c3044d7b701473ea2821e4d",
+    "category": "ottoman",
+    "source": "objaverse",
+    "description": "A brown rectangular storage ottoman with a flat top and recessed panel details on the front.",
+    "size": [
+     0.5714280009269714,
+     0.4017850160598755,
+     0.4544200897216797
+    ],
+    "score": 0.512,
+    "license": "by"
+   },
+   {
+    "uid": "5165ddd59c40439f98cc61ce3ccb37a4",
+    "category": "ottoman",
+    "source": "objaverse",
+    "description": "A decorative ottoman with a floral-patterned top and smooth beige sides, perfect for indoor use.",
+    "size": [
+     0.3342955410480499,
+     0.6167513728141785,
+     0.4374486804008484
+    ],
+    "score": 0.505,
+    "license": "by-sa"
+   },
+   {
+    "uid": "035cd8557a23484e8b2986da0504b737",
+    "category": "ottoman",
+    "source": "objaverse",
+    "description": "A round ottoman with a straw-like texture and earthy brown tones, perfect for a rustic indoor space.",
+    "size": [
+     0.7555437088012695,
+     0.7004493474960327,
+     0.453715056180954
+    ],
+    "score": 0.504,
+    "license": "by"
+   },
+   {
+    "uid": "Footstool_2_1",
+    "category": "footstool",
+    "source": "thor",
+    "description": "A modern cubic footstool with a dark frame featuring large circular cutouts on each side and a light cushioned fabric top.",
+    "size": [
+     0.5486252307891846,
+     0.5486252307891846,
+     0.6041760444641113
+    ],
+    "score": 0.504,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "90119426e0c04a9f9a54c4fbccf73588",
+    "category": "ottoman",
+    "source": "objaverse",
+    "description": "A cylindrical ottoman with a plush, mottled dark green texture and a contrasting base band.",
+    "size": [
+     0.3999900817871094,
+     0.4001270532608032,
+     0.44510358572006226
+    ],
+    "score": 0.499,
+    "license": "by"
+   },
+   {
+    "uid": "098528ec259946748e70b9dbb826a081",
+    "category": "ottoman",
+    "source": "objaverse",
+    "description": "A smooth, green ottoman with a soft, glossy surface and an organic, pebble-like shape. Ideal for modern interiors as a footrest or seating.",
+    "size": [
+     0.4006745219230652,
+     0.3912293612957001,
+     0.4497872143983841
+    ],
+    "score": 0.495,
+    "license": "by"
+   },
+   {
+    "uid": "2e3e61ab194d4ac4aa653426ce6ff910",
+    "category": "ottoman",
+    "source": "objaverse",
+    "description": "A smooth, cube-shaped ottoman with a dark wooden finish and gently curved edges, ideal for use as a footrest or seating.",
+    "size": [
+     0.4497034549713135,
+     0.4498070478439331,
+     0.44968318939208984
+    ],
+    "score": 0.493,
+    "license": "by"
+   }
+  ],
+  "laundry_hamper": [
+   {
+    "uid": "46e0b9cebba34f99964b44d6eaa839f3",
+    "category": "laundryhamper",
+    "source": "objaverse",
+    "description": "A modern laundry hamper with a fabric bag and a light wooden frame featuring crossed legs for stability.",
+    "size": [
+     0.38356202840805054,
+     0.41095900535583496,
+     0.805480033159256
+    ],
+    "score": 0.597,
+    "license": "by"
+   },
+   {
+    "uid": "561960f6df8a49aca4f3ff54a7d82b8c",
+    "category": "laundryhamper",
+    "source": "objaverse",
+    "description": "A tall, rectangular laundry basket with circular ventilation holes and integrated handles, made of light gray plastic.",
+    "size": [
+     0.466508686542511,
+     0.4665156900882721,
+     0.6093378663063049
+    ],
+    "score": 0.596,
+    "license": "by"
+   },
+   {
+    "uid": "Laundry_Hamper_1_2",
+    "category": "laundryhamper",
+    "source": "thor",
+    "description": "A cylindrical woven rattan laundry hamper with a fitted lid and three handles, featuring a warm brown textured surface and a durable, ventilated design.",
+    "size": [
+     0.4512821137905121,
+     0.3505646586418152,
+     0.6036180257797241
+    ],
+    "score": 0.59,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "d3816d262be141ad9bcbce8993a7c1ca",
+    "category": "laundryhamper",
+    "source": "objaverse",
+    "description": "A blue plastic laundry basket with a lattice design and a matching lid, ideal for storing clothes.",
+    "size": [
+     0.34827595949172974,
+     0.34144073724746704,
+     0.6005573272705078
+    ],
+    "score": 0.57,
+    "license": "by"
+   },
+   {
+    "uid": "5ed694999b6f48d6918e2c5ce21e88f8",
+    "category": "basket",
+    "source": "objaverse",
+    "description": "A tall, blue plastic basket with a grid-like, lattice structure and a reinforced top edge.",
+    "size": [
+     0.42878806591033936,
+     0.4287840723991394,
+     0.6098310649394989
+    ],
+    "score": 0.567,
+    "license": "by"
+   },
+   {
+    "uid": "0649facc4f0a423dab5d41546476154b",
+    "category": "laundryhamper",
+    "source": "objaverse",
+    "description": "A white plastic laundry basket with a grid-patterned lid and slatted sides, featuring 'DATA CENTER' embossed on the front.",
+    "size": [
+     0.34683793783187866,
+     0.2868909537792206,
+     0.6037469804286957
+    ],
+    "score": 0.564,
+    "license": "by"
+   },
+   {
+    "uid": "46c31233f70f43c4b026e67275aa8640",
+    "category": "laundryhamper",
+    "source": "objaverse",
+    "description": "A compact, rectangular laundry hamper with a light green fabric front and a smooth white top. It features a hinged lid and elegant wooden legs.",
+    "size": [
+     0.6721290349960327,
+     0.5577231049537659,
+     0.9152381122112274
+    ],
+    "score": 0.542,
+    "license": "by"
+   },
+   {
+    "uid": "bf8cb2f9a32c4078a35d7328105ee0ca",
+    "category": "laundryhamper",
+    "source": "objaverse",
+    "description": "A compact, rectangular laundry hamper with a light green fabric front and a smooth white top. It features a hinged lid and elegant wooden legs.",
+    "size": [
+     0.6721290349960327,
+     0.5577230453491211,
+     0.915238082408905
+    ],
+    "score": 0.538,
+    "license": "by"
+   }
+  ],
+  "storage_chest": [
+   {
+    "uid": "ae6a2752a2c14ecfbbef1914b6c00205",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rustic wooden crate with diagonal planks and reinforced sides, ideal for storage.",
+    "size": [
+     0.8350127339363098,
+     0.5517995357513428,
+     0.5984445810317993
+    ],
+    "score": 0.554,
+    "license": "by"
+   },
+   {
+    "uid": "8d1ee0ee7d2e4845ab0a752ee5b58aa7",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rustic wooden crate with horizontal slats and a weathered texture, ideal for storage.",
+    "size": [
+     0.49999991059303284,
+     0.9907267689704895,
+     0.5
+    ],
+    "score": 0.553,
+    "license": "by"
+   },
+   {
+    "uid": "956cef1ca1af49f5953fc202b20dcfb9",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A wooden crate with vertical slats, metal rivets, and diagonal reinforcements, ideal for storage.",
+    "size": [
+     0.9870439171791077,
+     0.5995989441871643,
+     0.6000003814697266
+    ],
+    "score": 0.548,
+    "license": "by"
+   },
+   {
+    "uid": "613bec94bd0e47d4a7544a134a52700a",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rustic wooden crate with a slatted design and metal rivets, featuring a weathered finish and sturdy construction.",
+    "size": [
+     0.4999999701976776,
+     0.9975119829177856,
+     0.5
+    ],
+    "score": 0.544,
+    "license": "by"
+   },
+   {
+    "uid": "10761c26796443dab465403d4e503377",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A large, dark brown wooden crate with a paneled design and metal rivet reinforcements.",
+    "size": [
+     1.1412516832351685,
+     0.6295063495635986,
+     0.6000006198883057
+    ],
+    "score": 0.528,
+    "license": "by"
+   },
+   {
+    "uid": "cc947814e62f4108977c0ff06e6beee8",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rectangular storage chest with a wooden frame and blue-gray metal sides, featuring small metal accents.",
+    "size": [
+     0.6573579907417297,
+     1.174781084060669,
+     0.5074701905250549
+    ],
+    "score": 0.527,
+    "license": "by"
+   },
+   {
+    "uid": "e3d28114b208463593282d6abdb7e6ea",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rustic wooden crate with diagonal reinforcements and stenciled symbols, ideal for storage or transport.",
+    "size": [
+     0.5999997854232788,
+     0.6000002026557922,
+     0.5999410152435303
+    ],
+    "score": 0.526,
+    "license": "by"
+   },
+   {
+    "uid": "b4beb8001f654b6699bee019d90d2ca0",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rustic wooden crate with a weathered, dark brown finish and visible wood grain, reinforced with horizontal and diagonal beams.",
+    "size": [
+     0.5907518267631531,
+     0.594163715839386,
+     0.6000006794929504
+    ],
+    "score": 0.515,
+    "license": "by"
+   }
+  ],
+  "office_chair": [
+   {
+    "uid": "RoboTHOR_office_chair_allak",
+    "category": "chair",
+    "source": "thor",
+    "description": "A light blue upholstered office chair with a high backrest, black armrests, and a black metal base with caster wheels.",
+    "size": [
+     0.607396125793457,
+     0.6241070032119751,
+     0.9913313388824463
+    ],
+    "score": 0.549,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "RoboTHOR_office_chair_skruvsta",
+    "category": "chair",
+    "source": "thor",
+    "description": "A modern red fabric swivel chair with a cushioned bucket seat and a black metal four-legged base.",
+    "size": [
+     0.635282039642334,
+     0.6078397035598755,
+     0.7892882823944092
+    ],
+    "score": 0.503,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "2ea7d871e2f64c7daa6977a8d268b45e",
+    "category": "chair",
+    "source": "objaverse",
+    "description": "A modern, minimalist chair with a high backrest and armrests, featuring a sleek light blue design.",
+    "size": [
+     0.5714196562767029,
+     0.5714197754859924,
+     1.015857070684433
+    ],
+    "score": 0.499,
+    "license": "by"
+   },
+   {
+    "uid": "790ef1bf24ed4354b6c626caaafe4a81",
+    "category": "chair",
+    "source": "objaverse",
+    "description": "A modern, minimalist chair with a light purple color and a unique angular base, perfect for indoor spaces.",
+    "size": [
+     0.7428447604179382,
+     0.6999406814575195,
+     0.9142509698867798
+    ],
+    "score": 0.495,
+    "license": "by"
+   },
+   {
+    "uid": "81b01f192380481fad7107d7185c103a",
+    "category": "chair",
+    "source": "objaverse",
+    "description": "A modern, minimalist pink chair with a cubic design and a geometric pedestal base, perfect for contemporary interiors.",
+    "size": [
+     0.6142770051956177,
+     0.6142870783805847,
+     0.9071130752563477
+    ],
+    "score": 0.492,
+    "license": "by"
+   },
+   {
+    "uid": "f8e56fcf88174c4b8900e2c477868f66",
+    "category": "chair",
+    "source": "objaverse",
+    "description": "A modern, minimalist chair with a cubic design and a geometric pedestal base, all in a light pink color.",
+    "size": [
+     0.6142666339874268,
+     0.6142866611480713,
+     0.9071433544158936
+    ],
+    "score": 0.492,
+    "license": "by"
+   },
+   {
+    "uid": "3dc51c8a180d4e05a70a718cf6a6aba5",
+    "category": "chair",
+    "source": "objaverse",
+    "description": "A modern, minimalist chair with a cubic design and a soft pink color, featuring a geometric pedestal base.",
+    "size": [
+     0.6142666339874268,
+     0.6142866611480713,
+     0.9071433544158936
+    ],
+    "score": 0.49,
+    "license": "by"
+   },
+   {
+    "uid": "173d15a1e5a9476ba8a9dc3dcafbb087",
+    "category": "chair",
+    "source": "objaverse",
+    "description": "A modern, minimalist light purple chair with a cubic design and a sturdy square base.",
+    "size": [
+     0.6142683029174805,
+     0.614288330078125,
+     0.9071459472179413
+    ],
+    "score": 0.488,
+    "license": "by"
+   }
+  ],
+  "laundry_cart": [
+   {
+    "uid": "46c31233f70f43c4b026e67275aa8640",
+    "category": "laundryhamper",
+    "source": "objaverse",
+    "description": "A compact, rectangular laundry hamper with a light green fabric front and a smooth white top. It features a hinged lid and elegant wooden legs.",
+    "size": [
+     0.6721290349960327,
+     0.5577231049537659,
+     0.9152381122112274
+    ],
+    "score": 0.461,
+    "license": "by"
+   },
+   {
+    "uid": "Laundry_Hamper_1_1",
+    "category": "laundryhamper",
+    "source": "thor",
+    "description": "A cylindrical laundry hamper with vertical muted stripes, featuring a lid with a top handle and two side handles, made of woven or fabric-covered material.",
+    "size": [
+     0.45128363370895386,
+     0.35056567192077637,
+     0.6036199927330017
+    ],
+    "score": 0.457,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "bf8cb2f9a32c4078a35d7328105ee0ca",
+    "category": "laundryhamper",
+    "source": "objaverse",
+    "description": "A compact, rectangular laundry hamper with a light green fabric front and a smooth white top. It features a hinged lid and elegant wooden legs.",
+    "size": [
+     0.6721290349960327,
+     0.5577230453491211,
+     0.915238082408905
+    ],
+    "score": 0.453,
+    "license": "by"
+   },
+   {
+    "uid": "Laundry_Hamper_1_3",
+    "category": "laundryhamper",
+    "source": "thor",
+    "description": "A tall cylindrical laundry hamper made of woven natural fiber with a fitted lid and loop handles on the top and sides for carrying.",
+    "size": [
+     0.6574568152427673,
+     0.5107249021530151,
+     0.8836627006530762
+    ],
+    "score": 0.436,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "7f86e8c4f839424fab8a6d43cdf2b4fc",
+    "category": "shelvingunit",
+    "source": "objaverse",
+    "description": "A sturdy, industrial-style shelving unit with a metal frame and wooden slats, featuring two levels of shelving.",
+    "size": [
+     0.6029918789863586,
+     0.6029897928237915,
+     1.015593558549881
+    ],
+    "score": 0.433,
+    "license": "by"
+   },
+   {
+    "uid": "Laundry_Hamper_1_2",
+    "category": "laundryhamper",
+    "source": "thor",
+    "description": "A cylindrical woven rattan laundry hamper with a fitted lid and three handles, featuring a warm brown textured surface and a durable, ventilated design.",
+    "size": [
+     0.4512821137905121,
+     0.3505646586418152,
+     0.6036180257797241
+    ],
+    "score": 0.415,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "b6a608be31e943f6a7c06b4134573a91",
+    "category": "shelvingunit",
+    "source": "objaverse",
+    "description": "A rustic wooden shelf unit with four open shelves and a weathered finish, perfect for storage or display.",
+    "size": [
+     0.5904765129089355,
+     0.514286458492279,
+     1.2190423607826233
+    ],
+    "score": 0.41,
+    "license": "by"
+   },
+   {
+    "uid": "71475573eb694d6891c7ffbeda9356ef",
+    "category": "shelvingunit",
+    "source": "objaverse",
+    "description": "A modern three-tiered shelf unit with a metal frame and geometric patterned surfaces.",
+    "size": [
+     0.906464159488678,
+     0.3664460778236389,
+     0.906449019908905
+    ],
+    "score": 0.407,
+    "license": "by"
+   }
+  ],
+  "suitcase": [
+   {
+    "uid": "4e15375f0ea04d80afb22229cda1b9de",
+    "category": "bag",
+    "source": "objaverse",
+    "description": "A modern, angular backpack with a blue body and contrasting black straps, featuring a geometric design.",
+    "size": [
+     0.31665295362472534,
+     0.2939377427101135,
+     0.45510396361351013
+    ],
+    "score": 0.411,
+    "license": "by"
+   },
+   {
+    "uid": "36e330de3f4348da88bcb513378af5be",
+    "category": "bag",
+    "source": "objaverse",
+    "description": "A large, dark gray backpack with a turquoise accent and black straps, featuring a modern and sleek design.",
+    "size": [
+     0.3905389904975891,
+     0.5454850196838379,
+     0.511976957321167
+    ],
+    "score": 0.406,
+    "license": "by"
+   },
+   {
+    "uid": "feca294b602b43fba9a090e456c303ae",
+    "category": "bag",
+    "source": "objaverse",
+    "description": "A modern gray backpack with a basketball player silhouette and 'AIR' text, featuring black zippers and adjustable straps.",
+    "size": [
+     0.3048233091831207,
+     0.3302333354949951,
+     0.4507072865962982
+    ],
+    "score": 0.391,
+    "license": "by"
+   },
+   {
+    "uid": "2ad86321197a49feb54b7726743d7fd0",
+    "category": "bag",
+    "source": "objaverse",
+    "description": "A rugged brown leather backpack with straps, buckles, and rolled-up canvas sides, designed for durability and practicality.",
+    "size": [
+     0.501798689365387,
+     0.44686654210090637,
+     0.4918648600578308
+    ],
+    "score": 0.384,
+    "license": "by"
+   },
+   {
+    "uid": "25ec8358707c4b0680bd045d4680b2f1",
+    "category": "bag",
+    "source": "objaverse",
+    "description": "A vibrant purple backpack with a modern design, featuring a prominent zipper and colorful patches.",
+    "size": [
+     0.3428579568862915,
+     0.41039517521858215,
+     0.45128828287124634
+    ],
+    "score": 0.356,
+    "license": "by"
+   },
+   {
+    "uid": "b8037798633640e7bf040aac16ea8d45",
+    "category": "bag",
+    "source": "objaverse",
+    "description": "A rugged tan canvas backpack with leather accents, featuring multiple compartments and padded straps.",
+    "size": [
+     0.3523136377334595,
+     0.33470258116722107,
+     0.45513319969177246
+    ],
+    "score": 0.353,
+    "license": "by"
+   },
+   {
+    "uid": "ba8cd12090ce40ca8a649cf6d8cf8096",
+    "category": "bag",
+    "source": "objaverse",
+    "description": "A rugged olive-green backpack with quilted back panel and brown padded straps, featuring a large flap and front pocket.",
+    "size": [
+     0.3413136601448059,
+     0.3650756776332855,
+     0.4799160659313202
+    ],
+    "score": 0.345,
+    "license": "by"
+   },
+   {
+    "uid": "783d64c62e874b62b7a17c8e2ea8dcbb",
+    "category": "bag",
+    "source": "objaverse",
+    "description": "A compact, dual-cylinder backpack with olive green body and metallic blue tanks labeled 'Skyrim'.",
+    "size": [
+     0.3428992033004761,
+     0.37348881363868713,
+     0.5077471733093262
+    ],
+    "score": 0.34,
+    "license": "by"
+   }
+  ],
+  "rolling_bookshelf": [
+   {
+    "uid": "1f5a9f402f6c4eeea5da95f3c2175013",
+    "category": "shelvingunit",
+    "source": "objaverse",
+    "description": "A tall, light brown shelving unit with five open shelves, ideal for storage and display.",
+    "size": [
+     1.2697421312332153,
+     0.43255800008773804,
+     1.8139469027519226
+    ],
+    "score": 0.569,
+    "license": "by"
+   },
+   {
+    "uid": "62665d54bbd3429f98ff4bf90a89fc85",
+    "category": "shelvingunit",
+    "source": "objaverse",
+    "description": "A modern shelving unit with three shelves and contrasting blue side panels, perfect for indoor use.",
+    "size": [
+     0.8372029066085815,
+     0.41860538721084595,
+     1.007745087146759
+    ],
+    "score": 0.568,
+    "license": "by"
+   },
+   {
+    "uid": "b6a608be31e943f6a7c06b4134573a91",
+    "category": "shelvingunit",
+    "source": "objaverse",
+    "description": "A rustic wooden shelf unit with four open shelves and a weathered finish, perfect for storage or display.",
+    "size": [
+     0.5904765129089355,
+     0.514286458492279,
+     1.2190423607826233
+    ],
+    "score": 0.559,
+    "license": "by"
+   },
+   {
+    "uid": "11c3d60b238f48b8879f63188cde5ab9",
+    "category": "shelvingunit",
+    "source": "objaverse",
+    "description": "A three-tiered wooden shelf with a tilted design and dark brown finish, ideal for storage and decoration.",
+    "size": [
+     0.6294956803321838,
+     0.3600462079048157,
+     1.2000966668128967
+    ],
+    "score": 0.557,
+    "license": "by"
+   },
+   {
+    "uid": "c7e4de52182342699cd12356c735b236",
+    "category": "shelvingunit",
+    "source": "objaverse",
+    "description": "A wooden shelving unit with a natural finish, featuring four open square compartments for storage or display.",
+    "size": [
+     1.0000011920928955,
+     0.3886863589286804,
+     1.0051171779632568
+    ],
+    "score": 0.553,
+    "license": "by"
+   },
+   {
+    "uid": "71475573eb694d6891c7ffbeda9356ef",
+    "category": "shelvingunit",
+    "source": "objaverse",
+    "description": "A modern three-tiered shelf unit with a metal frame and geometric patterned surfaces.",
+    "size": [
+     0.906464159488678,
+     0.3664460778236389,
+     0.906449019908905
+    ],
+    "score": 0.539,
+    "license": "by"
+   },
+   {
+    "uid": "Shelving_Unit_313_1",
+    "category": "shelvingunit",
+    "source": "thor",
+    "description": "A tall, dark rectangular shelving unit with four shelves divided into eight compartments, featuring a smooth, solid panel construction and a modern, functional design.",
+    "size": [
+     1.0639550685882568,
+     0.34471336007118225,
+     1.5640978813171387
+    ],
+    "score": 0.539,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "5e4cc0f33e584e4791a0b66537ad1a9b",
+    "category": "shelvingunit",
+    "source": "objaverse",
+    "description": "A tall, vintage-style wooden bookshelf with a distressed green finish, featuring open shelves and a lower cabinet.",
+    "size": [
+     0.9520659446716309,
+     0.46044301986694336,
+     1.80743807554245
+    ],
+    "score": 0.537,
+    "license": "by"
+   }
+  ],
+  "armchair": [
+   {
+    "uid": "Armchair_225_1",
+    "category": "armchair",
+    "source": "thor",
+    "description": "A dark leather armchair with wide rounded armrests, thick cushions, and a fully upholstered back and sides, designed for comfort and durability.",
+    "size": [
+     1.0410938262939453,
+     0.7444745302200317,
+     0.8847870230674744
+    ],
+    "score": 0.564,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "Armchair_205_1_1",
+    "category": "armchair",
+    "source": "thor",
+    "description": "A plush burgundy armchair with wide, cushioned seat and flared armrests, featuring a solid, padded base extending to the floor.",
+    "size": [
+     1.154144287109375,
+     0.8698302507400513,
+     0.8599944114685059
+    ],
+    "score": 0.562,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "Armchair_210_1",
+    "category": "armchair",
+    "source": "thor",
+    "description": "A modern dark fabric armchair with flared armrests, tufted seat cushion, and a solid upholstered base extending to the floor.",
+    "size": [
+     1.0959726572036743,
+     0.9408762454986572,
+     0.7222883701324463
+    ],
+    "score": 0.562,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "Armchair_201_4",
+    "category": "armchair",
+    "source": "thor",
+    "description": "A plush armchair upholstered in floral fabric with button tufting on the backrest, wide padded armrests, and a solid boxy frame, evoking a vintage and cozy aesthetic.",
+    "size": [
+     1.0000133514404297,
+     0.9790310859680176,
+     0.9223117232322693
+    ],
+    "score": 0.558,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "RoboTHOR_armchair_ektorp",
+    "category": "armchair",
+    "source": "thor",
+    "description": "A large beige upholstered armchair with rounded armrests, a plush seat cushion, a tall backrest, and a tailored skirt covering the base.",
+    "size": [
+     0.9711011648178101,
+     0.8516461849212646,
+     0.8387781977653503
+    ],
+    "score": 0.556,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "RoboTHOR_armchair_karlstad",
+    "category": "armchair",
+    "source": "thor",
+    "description": "A modern armchair upholstered in deep blue fabric with thick cushions and wide armrests, supported by four light wooden legs.",
+    "size": [
+     0.8930598497390747,
+     0.9380807876586914,
+     0.9084062576293945
+    ],
+    "score": 0.549,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "Armchair_219_2",
+    "category": "armchair",
+    "source": "thor",
+    "description": "A modern, dark blue upholstered armchair with thick cushions, wide padded armrests, and a solid fabric-covered base, featuring a boxy and minimalist design.",
+    "size": [
+     1.0588243007659912,
+     0.7443574666976929,
+     0.9594594240188599
+    ],
+    "score": 0.548,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "RoboTHOR_armchair_ekenas_v",
+    "category": "armchair",
+    "source": "thor",
+    "description": "A modern dark blue upholstered armchair with broad armrests, a cushioned seat and backrest, and four short dark wooden legs.",
+    "size": [
+     0.8998573422431946,
+     0.7350000739097595,
+     0.880425214767456
+    ],
+    "score": 0.546,
+    "license": "cc-by-4.0 (thor)"
+   }
+  ],
+  "bench": [
+   {
+    "uid": "2935c91e63854281acf9faf5ae65f206",
+    "category": "bench",
+    "source": "objaverse",
+    "description": "A modern bench with a gray cushioned seat and a wooden storage compartment, supported by angled wooden legs.",
+    "size": [
+     0.42185476422309875,
+     0.8923503160476685,
+     0.45405569672584534
+    ],
+    "score": 0.535,
+    "license": "by"
+   },
+   {
+    "uid": "b1dee5cc815f4eabba00b12496d0baad",
+    "category": "bench",
+    "source": "objaverse",
+    "description": "A rustic wooden bench with a reddish-brown hue and moss-like detailing, featuring an open space beneath the top surface.",
+    "size": [
+     1.2308335304260254,
+     0.40744808316230774,
+     0.4583338499069214
+    ],
+    "score": 0.526,
+    "license": "by-sa"
+   },
+   {
+    "uid": "7eef157be0b34850b05fd90248ff37f3",
+    "category": "bench",
+    "source": "objaverse",
+    "description": "A modern bench with parallel wooden slats and a geometric framework, offering a minimalist and airy design.",
+    "size": [
+     1.226709246635437,
+     0.6245085000991821,
+     0.46092063188552856
+    ],
+    "score": 0.524,
+    "license": "by"
+   },
+   {
+    "uid": "980833a704374723907e9615d3f5e111",
+    "category": "bench",
+    "source": "objaverse",
+    "description": "A rectangular wooden storage bench with striped slats on top and a simple, functional design.",
+    "size": [
+     1.3053932189941406,
+     0.501788854598999,
+     0.4500003159046173
+    ],
+    "score": 0.501,
+    "license": "by"
+   },
+   {
+    "uid": "1fb35d351a2d40718d46451197922157",
+    "category": "bench",
+    "source": "objaverse",
+    "description": "A modern wooden bench with three drawers and dark legs, perfect for indoor use.",
+    "size": [
+     1.3616379499435425,
+     0.43060314655303955,
+     0.4655120372772217
+    ],
+    "score": 0.493,
+    "license": "by"
+   },
+   {
+    "uid": "790061d2832f4d1fab8245cc4847b08f",
+    "category": "bench",
+    "source": "objaverse",
+    "description": "A modern orange bench with three drawers and open sides, featuring a sleek and minimalist design.",
+    "size": [
+     1.3616379499435425,
+     0.43060302734375,
+     0.46551698446273804
+    ],
+    "score": 0.481,
+    "license": "by"
+   },
+   {
+    "uid": "d4514e4e6cdd489cbb7c6a3d7cf11755",
+    "category": "bench",
+    "source": "objaverse",
+    "description": "A modern rectangular storage bench with geometric front panels and recessed back handles, finished in a light color.",
+    "size": [
+     1.1433639526367188,
+     0.473022997379303,
+     0.4553195834159851
+    ],
+    "score": 0.47,
+    "license": "by"
+   },
+   {
+    "uid": "423963a752ce4e85a45d4f9c220f6090",
+    "category": "bench",
+    "source": "objaverse",
+    "description": "A wooden bench with three drawers and an open shelf, featuring a warm brown finish and black handles.",
+    "size": [
+     1.3616379499435425,
+     0.4306032061576843,
+     0.46551719307899475
+    ],
+    "score": 0.468,
+    "license": "by"
+   }
+  ],
+  "nightstand": [
+   {
+    "uid": "2daea83695b84240ad62ca80f83ce3f1",
+    "category": "sidetable",
+    "source": "objaverse",
+    "description": "A wooden nightstand with two drawers and an open shelf, featuring metallic handles and a polished finish.",
+    "size": [
+     0.5888625383377075,
+     0.4333343803882599,
+     0.7055016160011292
+    ],
+    "score": 0.626,
+    "license": "by"
+   },
+   {
+    "uid": "012527a2f8484434a0651e819b693b14",
+    "category": "sidetable",
+    "source": "objaverse",
+    "description": "A wooden nightstand with a modern design, featuring a single drawer with a black knob and a natural wood finish.",
+    "size": [
+     0.5638246536254883,
+     0.5952385663986206,
+     0.6047627627849579
+    ],
+    "score": 0.624,
+    "license": "by"
+   },
+   {
+    "uid": "3553dea24fe44ac5a7f056842ca78d0f",
+    "category": "sidetable",
+    "source": "objaverse",
+    "description": "A small wooden side table with a single drawer, featuring a light wood finish and brass-colored knobs.",
+    "size": [
+     0.5439617037773132,
+     0.39521703124046326,
+     0.604744166135788
+    ],
+    "score": 0.623,
+    "license": "by"
+   },
+   {
+    "uid": "b5b0e068e5684e1cbb03eb718aebf399",
+    "category": "sidetable",
+    "source": "objaverse",
+    "description": "A vintage-style wooden nightstand with a rustic finish, featuring a drawer and cabinet with ornate carvings.",
+    "size": [
+     0.5444089770317078,
+     0.5000010132789612,
+     0.8110978603363037
+    ],
+    "score": 0.615,
+    "license": "by"
+   },
+   {
+    "uid": "Side_Table_317_1",
+    "category": "sidetable",
+    "source": "thor",
+    "description": "A natural wood side table with a drawer and cabinet door, featuring a brass knob and solid wood panels with visible grain.",
+    "size": [
+     0.4314911961555481,
+     0.3663443922996521,
+     0.5599445104598999
+    ],
+    "score": 0.603,
+    "license": "cc-by-4.0 (thor)"
+   },
+   {
+    "uid": "af67050e1d854f04bfeee61d01c0cd29",
+    "category": "sidetable",
+    "source": "objaverse",
+    "description": "A minimalist wooden side table with a light wood finish, featuring a seamless drawer and cylindrical legs.",
+    "size": [
+     0.5809580087661743,
+     0.40475699305534363,
+     0.6047276854515076
+    ],
+    "score": 0.598,
+    "license": "by"
+   },
+   {
+    "uid": "a130a5950caa471aacf55c1630938300",
+    "category": "sidetable",
+    "source": "objaverse",
+    "description": "A modern side table with a white frame and wood grain accents, featuring a single drawer and minimalist design.",
+    "size": [
+     0.6087816953659058,
+     0.4478445053100586,
+     0.6087889075279236
+    ],
+    "score": 0.596,
+    "license": "by"
+   },
+   {
+    "uid": "78873d11a9044d5d8d3e0f1bf538242f",
+    "category": "sidetable",
+    "source": "objaverse",
+    "description": "A wooden nightstand with two drawers and metal handles, showcasing a rustic wood grain finish.",
+    "size": [
+     0.6331085562705994,
+     0.42638540267944336,
+     0.7054329514503479
+    ],
+    "score": 0.596,
+    "license": "by"
+   }
+  ],
+  "pet_crate": [
+   {
+    "uid": "e6ebb3b9af6b4668a739b3622dd4dd35",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rectangular wooden crate with visible wood grain and horizontal slats, suitable for storage or decoration.",
+    "size": [
+     0.824730396270752,
+     0.5000009536743164,
+     0.5000009536743164
+    ],
+    "score": 0.406,
+    "license": "by"
+   },
+   {
+    "uid": "613bec94bd0e47d4a7544a134a52700a",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rustic wooden crate with a slatted design and metal rivets, featuring a weathered finish and sturdy construction.",
+    "size": [
+     0.4999999701976776,
+     0.9975119829177856,
+     0.5
+    ],
+    "score": 0.39,
+    "license": "by"
+   },
+   {
+    "uid": "c87ae28ea04341ae9c2aa88598128073",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A wooden crate with colorful graffiti-like patterns and metal reinforcements.",
+    "size": [
+     0.4190964698791504,
+     0.8891007304191589,
+     0.5000009536743164
+    ],
+    "score": 0.386,
+    "license": "by"
+   },
+   {
+    "uid": "ae6a2752a2c14ecfbbef1914b6c00205",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rustic wooden crate with diagonal planks and reinforced sides, ideal for storage.",
+    "size": [
+     0.8350127339363098,
+     0.5517995357513428,
+     0.5984445810317993
+    ],
+    "score": 0.379,
+    "license": "by"
+   },
+   {
+    "uid": "10761c26796443dab465403d4e503377",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A large, dark brown wooden crate with a paneled design and metal rivet reinforcements.",
+    "size": [
+     1.1412516832351685,
+     0.6295063495635986,
+     0.6000006198883057
+    ],
+    "score": 0.377,
+    "license": "by"
+   },
+   {
+    "uid": "48727d16532c44e0bdeb65094244e13f",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A rustic wooden crate with a weathered look, reinforced with diagonal planks and metal rivets.",
+    "size": [
+     0.9118144512176514,
+     0.8704879879951477,
+     1.0
+    ],
+    "score": 0.376,
+    "license": "by"
+   },
+   {
+    "uid": "a5aacf63e4c24f139b324edea60d749a",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A dark wooden storage chest with horizontal slats and metal fasteners, ideal for home or office use.",
+    "size": [
+     0.4999920725822449,
+     0.9906732439994812,
+     0.49999022483825684
+    ],
+    "score": 0.371,
+    "license": "by"
+   },
+   {
+    "uid": "69fe3211493c4a4db26ad0c4e2e49a83",
+    "category": "box",
+    "source": "objaverse",
+    "description": "A sleek, metallic storage container with reinforced corners, a central handle, and bold dark straps for durability.",
+    "size": [
+     0.6264456510543823,
+     0.41052675247192383,
+     0.49522894620895386
+    ],
+    "score": 0.37,
+    "license": "by"
+   }
+  ]
+ },
+ "uncovered": []
+}

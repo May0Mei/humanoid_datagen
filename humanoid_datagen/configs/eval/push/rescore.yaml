@@ -1,0 +1,16 @@
+# @package _global_
+# Hand-rule rescoring of the GRScenes v3 push eval (the task's rescore: tasks/push/hand_rescore.py): replays each
+# saved trajectory; writes <results_root>/hand_contact.<shard>.jsonl and prints the totals at the end.
+#   python humanoid_datagen/scripts/eval.py --config_name eval/push/rescore      (shard / num_shards, or SLURM_ARRAY_*)
+defaults:
+  - grscenes_hold
+  - _self_
+
+mode: rescore
+evaluator:
+  rescore_roots:
+    - outputs/eval/push/grscenes_v3/halo_ours
+    - outputs/eval/push/grscenes_v3/halo_text
+    - outputs/eval/push/grscenes_v3/halo_halo_infinigen
+  shard: 0
+  num_shards: 1

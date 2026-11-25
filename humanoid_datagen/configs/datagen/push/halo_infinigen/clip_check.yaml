@@ -1,0 +1,9 @@
+# @package _global_
+# Stage clip, check steps (base env): render each clip with the kinematic box, and track it with GEAR-SONIC.
+#   python humanoid_datagen/scripts/datagen.py --config_name datagen/push/halo_infinigen/clip_check
+defaults:
+  - clip
+  - _self_
+
+stage:
+  run_steps: [render, track]

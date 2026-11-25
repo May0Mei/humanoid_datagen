@@ -1,0 +1,11 @@
+# @package _global_
+# Stage prompts: one prior folder per hand-written Wan prompt (wan.txt, kimodo.txt, meta.json).
+#   python humanoid_datagen/scripts/datagen.py --config_name datagen/push/agents/prompts
+defaults:
+  - base
+  - _self_
+
+stage:
+  _target_: humanoid_datagen.datagen_pipelines.shared.priors.Prompts
+  prompts_file: humanoid_datagen/configs/datagen/push/prompts_1000.jsonl   # 1000 hand-written prompts, 18 object types
+  seed: 0                            # prior-id order and Kimodo phrasing only; the prompts are fixed

@@ -1,0 +1,11 @@
+# @package _global_
+# Stage select: each prior's motions from its candidates (palm fit, SONIC no-fall, push distance).
+#   python humanoid_datagen/scripts/datagen.py --config_name datagen/push/agents/select
+defaults:
+  - base
+  - _self_
+
+stage:
+  _target_: humanoid_datagen.datagen_pipelines.shared.motions.SelectMotions
+  keep: 4                     # motions per prior given to the scene agent
+  videos: true                # motion_videos/m*.mp4, tracked by SONIC, for review

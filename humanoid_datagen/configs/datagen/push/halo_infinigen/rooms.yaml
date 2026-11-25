@@ -1,0 +1,11 @@
+# @package _global_
+# Stage rooms: HALO's Infinigen rooms as push-datagen rooms (colliders from scene_analysis.json), for our
+# physics demos in them.
+#   python humanoid_datagen/scripts/datagen.py --config_name datagen/push/halo_infinigen/rooms
+defaults:
+  - base
+  - _self_
+
+stage:
+  _target_: humanoid_datagen.datagen_pipelines.halo_infinigen.rooms.InfinigenRooms
+  scenes: null                       # all converted scenes; or a list

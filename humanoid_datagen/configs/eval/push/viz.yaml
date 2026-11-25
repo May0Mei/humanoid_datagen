@@ -1,0 +1,14 @@
+# @package _global_
+# Review videos (third person + oak1 + plan / tracking plots) of saved GRScenes push episodes (evaluators/viz.py).
+#   python humanoid_datagen/scripts/eval.py --config_name eval/push/viz
+defaults:
+  - grscenes_hold
+  - _self_
+
+mode: viz
+evaluator:
+  viz:
+    roots: [outputs/eval/push/grscenes_v3/halo_ours]
+    fps: 25.0
+    success_only: false
+    ids: null                      # or ["<task_id>:<seed>", ...]

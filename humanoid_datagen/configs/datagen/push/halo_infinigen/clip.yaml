@@ -1,0 +1,43 @@
+# @package _global_
+# Stage clip (kimodo env): the Kimodo push clip that stands in for HALO's unreleased recording (v4: starts bent at
+# the box). `run_steps` run in order: encode (text embeddings), author (contact pose, IK), clip (Kimodo samples).
+#   python humanoid_datagen/scripts/datagen.py --config_name datagen/push/halo_infinigen/clip
+defaults:
+  - base
+  - _self_
+
+stage:
+  _target_: humanoid_datagen.datagen_pipelines.halo_infinigen.push_clip.HaloClip
+  run_steps: [encode, author, clip]
+  device: cpu
+  out_dir: outputs/push_box/halo_infinigen/push_clip_contact
+  robot_mjcf: $THIRD_PARTY_ROOT/ml-halo/assets/robots/g1/mjcf/g1_29dof_v2_thor.xml
+  standing_pose: $THIRD_PARTY_ROOT/ml-halo/datagen/motion_gen/kimodo/keyframes/g1_standing_pose.npy
+  box_size: [0.46, 0.50, 0.561264]          # ml-halo/assets/objects/pushbox/pushbox.urdf
+  box_mass: 1.0
+  box_friction: 0.75
+  box_floor_friction: 0.75                  # pinned box-floor pair (MuJoCo max-combines with the floor's 1.0, which tips the box)
+  box_gap: 0.03                             # box face beyond the start palms: the rollout's frozen settle must not touch it
+
+  # 1. contact pose (authored, `author` step): a moderate forward lean
+  contact_prompt: ""                        # unused
+  hinge:
+    palm_z: 0.46
+    reach: 0.28
+    palm_y: 0.17
+    knee: 1.3                               # rad; crouch-lean like the agent-scene motions SONIC pushes with (v2: 0.35)
+    max_pitch: 0.52                         # rad, ~30 deg pelvis pitch (scene motions: up to 34 deg; v2: 63 deg)
+
+  # 2. the clip: contact pose -> contact pose push_m further, nothing else constrained
+  start_at_contact: true
+  clip_prompt: "a person bends over to push a cardboard box forward while walking."
+  clip_samples: 4
+  approach_m: 0.8                           # only places the contact keyframe in the world (no walk-up in v4)
+  approach_s: 0.0
+  push_m: 1.2
+  push_s: 5.0
+  hand_every: 15                            # unused in v4
+  post_processing: false
+  steps: 200
+  cfg: [2.0, 2.0]
+  seed: 0

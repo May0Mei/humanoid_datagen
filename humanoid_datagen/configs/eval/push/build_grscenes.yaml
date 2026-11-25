@@ -1,0 +1,176 @@
+# @package _global_
+# Build the GRScenes push test set, once (eval mode `build`): compose each converted GRScenes home into a room-only
+# MJCF (`composer`), then draw its test tasks (tasks/push/test_objects.py): the home's own furniture of a test type
+# made free-moving, plus held-out library assets (`held_out.split_file`), each with test-only physics
+# (`test_physics`), kept only if it settles free on the floor. Writes `tasks.file`, which every eval config reads.
+#   python humanoid_datagen/scripts/eval.py --config_name eval/push/build_grscenes
+# Inputs: the converted homes (`scene_index`: GRScenes-100 USD -> scene specs, a one-off converter not in this repo),
+# the asset library (held_out.library_index + utilities/molmo-spaces-resources).
+# Test-only mass (kg) and floor friction ranges per object type for the GRScenes push test set
+# (humanoid_datagen/tasks/push/test_objects.py). Written once on 2026-11-16, before any eval run, from typical real
+# furniture weights; independent of the training object cards (tasks/push/prompts.OBJECTS) and of the agents' own
+# estimates. Each task draws one value per range (held-out seed); the drawn values are stored in the task file.
+# Caster types (office chair, laundry cart, suitcase, bookshelf) are library meshes without rolling casters, so a low
+# sliding friction stands in for rolling.
+# Composer settings for the homes (utils/scenes/composer.py): the G1 MJCF with the OAK-1 mount, physics options,
+# colliders (CoACD cache) and default classes.
+defaults:
+  - grscenes_hold
+  - _self_
+
+mode: build
+evaluator:
+  scene_index: outputs/eval/scenes/specs/grscenes/index.yaml
+  work_dir: outputs/eval/push/scenes                     # room-only composed MJCFs (shared by every policy)
+  max_scenes: null
+  tasks:
+                                                      # exact object placement + settle check below.
+                                                      # v2 (2026-11-20): standing start at the training distances,
+                                                      # held-out split after `test_objects check --apply`; v1: tasks_grscenes.jsonl
+    seed: 1000                 # held-out: training sources use other seeds / no seed from this stream
+    workers: 1                 # homes drawn at once (child process each, ~8-10 GB): 1 on the login node; the v3 draw job
+                               # (eval/push_grscenes_draw_v3) runs 7. Homes are independent, so the draw does not depend on it
+    # Test objects (tasks/push/test_objects.py; mass / friction from test_physics below, never the cards):
+    furniture_per_scene: 6     # the home's own floor-standing pieces of a test type (chair, armchair, nightstand, desk,
+                               # table, stool, box, basket), made free-moving: in place when a free run exists
+                               # (rare; furniture_push_len m beyond it), else relocated to free floor by the sampler
+    furniture_push_len: 0.5
+    furniture_relocate: true
+    furniture_max_per_type: 2  # per home (most homes hold a dozen dining chairs)
+    library_per_scene: 6       # held-out library assets (outputs/eval/push/test_split.json), types cycled
+    gap: [0.9, 1.4]            # standing pelvis -> object near face (m): 5th-95th pct of datagen v2 training
+                               # (0.5 m lead-in + each motion's frame-0 pelvis -> near face; median 1.10 m)
+    corridor_push_len: 1.0     # free floor required beyond the object (m)
+    settle_check:              # per drawn task: simulate the eval's settle (robot held still), keep it only if the
+                               # object rests free on the floor (test_objects.settle_check); else redraw spot / asset
+      settle_s: 1.0            # = episode.settle_s
+      hold_s: 2.0              # then held this long more: must stay put
+      max_settle_tilt_deg: 15  # tips more than this while settling (rocks onto its legs, folds over): reject
+      max_drift_m: 0.005       # moves / turns more than this during the hold: still sliding or rocking, reject
+                               # (stable objects: 0.000; the v2 ottoman that crept 4 cm / 12 s on 2 floor contacts: 0.006)
+      max_drift_tilt_deg: 2.0
+      tries: 3                 # spots per relocated piece / asset+spot draws per library slot
+                               # + rejected if it touches anything but the floor at the start or the end
+  held_out:
+    split_file: humanoid_datagen/configs/eval/push/test_split.json   # held-out library assets per type (curated)
+    library_index: utilities/library/index.pkl                        # the full asset index (nothing excluded)
+    library_dir: tmp/library_full                                     # its export, made on first use
+
+  test_physics:
+    cardboard_box:     {mass: [2, 6],    mu: [0.30, 0.50]}
+    wardrobe_box:      {mass: [5, 12],   mu: [0.30, 0.50]}
+    beer_case:         {mass: [9, 16],   mu: [0.30, 0.45]}
+    plastic_crate:     {mass: [5, 12],   mu: [0.25, 0.40]}
+    side_table:        {mass: [5, 10],   mu: [0.35, 0.55]}
+    dining_table:      {mass: [15, 30],  mu: [0.35, 0.55]}
+    desk:              {mass: [15, 30],  mu: [0.35, 0.55]}
+    ottoman:           {mass: [4, 9],    mu: [0.40, 0.60]}
+    laundry_hamper:    {mass: [2, 6],    mu: [0.30, 0.50]}
+    storage_chest:     {mass: [12, 25],  mu: [0.35, 0.50]}
+    office_chair:      {mass: [10, 16],  mu: [0.08, 0.20]}
+    laundry_cart:      {mass: [5, 12],   mu: [0.08, 0.20]}
+    suitcase:          {mass: [10, 22],  mu: [0.10, 0.25]}
+    rolling_bookshelf: {mass: [18, 35],  mu: [0.10, 0.25]}
+    armchair:          {mass: [12, 25],  mu: [0.35, 0.55]}
+    bench:             {mass: [6, 14],   mu: [0.35, 0.55]}
+    nightstand:        {mass: [7, 14],   mu: [0.35, 0.55]}
+    pet_crate:         {mass: [7, 14],   mu: [0.30, 0.50]}
+    chair:             {mass: [4, 9],    mu: [0.30, 0.50]}   # GRScenes dining chairs: not a training type, own split
+
+  composer:
+    robot:
+      include: true
+      mjcf: humanoid_datagen/assets/robots/g1/g1_29dof_official_oak1_mount.xml
+      root_body: pelvis
+      camera: oak1
+      ego_width: 640
+      ego_height: 400
+      extra_cameras: []
+      strip_world_tags:
+      - geom
+      - light
+      default_start_pose:
+        xy:
+        - 0.0
+        - 0.0
+        yaw: 0.0
+      base_height: null
+    floor_geom_name: floor
+    floor_plane_spacing: 0.05
+    default_ceiling_thickness: 0.1
+    compiler:
+      angle: radian
+      autolimits: true
+    option:
+      timestep: 0.005
+      integrator: implicitfast
+      cone: pyramidal
+      impratio: 1.0
+      iterations: 10
+      ls_iterations: 20
+    option_flags:
+      multiccd: disable
+    size:
+      memory: 256M
+    visual:
+      global:
+        offwidth: 1920
+        offheight: 1200
+      quality:
+        shadowsize: 4096
+        offsamples: 4
+      map:
+        zfar: 40
+        shadowclip: 6
+        shadowscale: 0.6
+      headlight: null
+      near_clip: 0.0154
+    collision:
+      default_method: convex_hull
+      collision_group: 3
+      collision_rgba:
+      - 0.9
+      - 0.3
+      - 0.3
+      - 0.4
+      cache_dir: outputs/eval/scenes/_cache/coacd
+      coacd:
+        threshold: 0.05
+        max_convex_hull: -1
+        preprocess_mode: auto
+        resolution: 2000
+        mcts_iterations: 150
+        seed: 0
+    classes:
+      scene_static:
+        contype: 1
+        conaffinity: 1
+        condim: 3
+        group: 0
+        friction:
+        - 0.8
+        - 0.01
+        - 0.0005
+        solref:
+        - 0.006
+        - 1
+        solimp:
+        - 0.9
+        - 0.97
+        - 0.002
+        solmix: 100
+      scene_dynamic:
+        contype: 1
+        conaffinity: 1
+        condim: 3
+        group: 0
+        friction:
+        - 0.8
+        - 0.01
+        - 0.0005
+        density: 500
+      scene_visual:
+        contype: 0
+        conaffinity: 0
+        group: 1
+        density: 0

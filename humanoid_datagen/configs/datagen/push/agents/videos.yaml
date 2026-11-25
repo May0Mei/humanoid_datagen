@@ -1,0 +1,13 @@
+# @package _global_
+# Stage videos (Wan2.2 env, one 80 GB GPU per array task): wan_<third|ego>_seed<s>.mp4 per prior.
+#   python humanoid_datagen/scripts/datagen.py --config_name datagen/push/agents/videos
+defaults:
+  - base
+  - _self_
+
+stage:
+  _target_: humanoid_datagen.datagen_pipelines.agents.wan.Videos
+  seeds: [0]
+  frame_num: 81
+  size: "1280*720"
+  offload: false                     # true on GPUs with < 80 GB

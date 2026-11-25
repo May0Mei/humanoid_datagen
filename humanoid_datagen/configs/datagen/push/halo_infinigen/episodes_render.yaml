@@ -1,0 +1,9 @@
+# @package _global_
+# Stage episodes, render step (base env, EGL): each episode into its Infinigen room, OAK-1 fisheye.
+#   python humanoid_datagen/scripts/datagen.py --config_name datagen/push/halo_infinigen/episodes_render
+defaults:
+  - episodes
+  - _self_
+
+stage:
+  run_steps: [render]

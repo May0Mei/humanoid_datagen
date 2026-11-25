@@ -1,0 +1,9 @@
+# @package _global_
+# Agent pipeline, push task, text prior: the video arm's base with the text prior and its own scenes.
+defaults:
+  - /datagen/push/agents/base
+  - _self_
+
+stage:
+  prior: text
+  scenes_root: outputs/push_box/scenes_text

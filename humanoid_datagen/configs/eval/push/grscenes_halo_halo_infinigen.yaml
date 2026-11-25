@@ -1,0 +1,17 @@
+# @package _global_
+# HALO trained on the HALO-baseline push data (vla/halo/push_halo_infinigen.yaml), GRScenes push eval with GEAR-SONIC.
+#   python humanoid_datagen/scripts/eval.py --config_name eval/push/grscenes_halo_halo_infinigen
+defaults:
+  - grscenes_hold
+  - _self_
+
+evaluator:
+  seeds: [0, 1, 2]
+  planner:
+    _target_: humanoid_datagen.vla.halo.HaloPlanner
+    hcfg:
+      config: humanoid_datagen/configs/vla/halo/push_halo_infinigen.yaml
+      checkpoint: outputs/checkpoints/vla/halo_push_halo_infinigen/final_model.pt
+      device: auto
+      seed: 0
+  results_root: outputs/eval/push/grscenes_v3/halo_halo_infinigen   # v3 tasks; v2 results stay in outputs/eval/push/grscenes/halo_halo_infinigen (runs resume by task_id: never mix the two)

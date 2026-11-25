@@ -1,0 +1,12 @@
+# @package _global_
+# HALO-baseline push episodes (datagen_pipelines/halo_infinigen/episodes.py, config datagen/push/halo_infinigen/episodes) -> HALO dataset:
+# the episodes HALO's motion_check gate accepted, fisheye OAK-1 video (fpv.mp4, clean: no cam_fx), the instruction
+# in meta.json ("Push the cardboard box forward."). Read by vla/halo/push_halo_infinigen.
+#   python humanoid_datagen/scripts/train.py --config_name train/push/export_halo_infinigen
+step:
+  _target_: humanoid_datagen.vla.export.HaloExport
+  halo_episodes:
+    root: outputs/push_box/halo_infinigen/episodes/episodes
+    video: fpv.mp4
+    accepted_only: true
+  out_dir: outputs/halo_data/push/halo_infinigen

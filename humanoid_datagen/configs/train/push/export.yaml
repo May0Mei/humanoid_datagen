@@ -1,0 +1,16 @@
+# @package _global_
+# Push demos (datagen/push/agents/demos, agents_text/demos) -> one HALO dataset per arm, matched: accepted demos only,
+# `total` per arm spread uniformly over the scenes both arms share (the same count per scene in both arms). Read by
+# vla/halo/push_{ours,text}.
+#   python humanoid_datagen/scripts/train.py --config_name train/push/export
+step:
+  _target_: humanoid_datagen.vla.export.HaloExport
+  matched:
+    arms:
+      ours: outputs/push_box/datagen/ours
+      text: outputs/push_box/datagen/text
+    camera: oak1
+    exclude_scenes: []          # scenes to drop in both arms (e.g. object types no motion pushes with the hands)
+    seed: 0
+    total: 2376                # demos per arm (the HALO-Infinigen baseline's training-set size)
+  out_root: outputs/halo_data/push

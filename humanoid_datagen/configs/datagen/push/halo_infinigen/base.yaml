@@ -1,0 +1,9 @@
+# @package _global_
+# HALO-Infinigen pipeline (HALO's procedural baseline), push task.
+defaults:
+  - /task/push@task
+  - _self_
+
+stage:
+  shard: 0
+  num_shards: 1

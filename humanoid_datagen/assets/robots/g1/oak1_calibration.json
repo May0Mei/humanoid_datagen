@@ -1,0 +1,70 @@
+{
+  "_comment": "OAK-1 W on our G1 (helmet mount on torso_link). Intrinsics: factory EEPROM calibration refit to Kannala-Brandt (cv2.fisheye), 2026-11-18; top-level keys match HALO's render/oak_intrinsics.json format. Extrinsics: hand-eye calibration (g1_oak_handeye.py), average of two hand-held ChArUco runs (median reprojection 5.7 px and 3.5 px; ~+-5 mm, ~+-1.5 deg); yaw/roll within noise, set to 0.",
+  "width": 1280,
+  "height": 800,
+  "fx": 569.7373984962337,
+  "fy": 569.4216249886883,
+  "cx": 635.4047544474386,
+  "cy": 399.1874928956867,
+  "distortion_model": "fisheye_kannala_brandt",
+  "distortion_coeffs": [
+    0.023131867114273865,
+    -0.07000417951942567,
+    0.0821911202984626,
+    -0.030406721359593637
+  ],
+  "extrinsics": {
+    "parent": "torso_link",
+    "pos_in_torso_m": [
+      0.1034,
+      0.0039,
+      0.4893
+    ],
+    "pitch_down_deg": 7.39,
+    "yaw_left_deg": 0.0,
+    "roll_right_side_down_deg": 0.0,
+    "mujoco_camera_in_helmet_assembly_link": {
+      "helmet_assembly_link_pos_in_torso": [
+        0.0039635,
+        0.0,
+        0.38
+      ],
+      "pos": "0.0994 0.0039 0.1093",
+      "xyaxes": "0 -1 0 0.1286225 0 0.9916936",
+      "resolution": "1280 800",
+      "sensorsize": "3.84 2.40",
+      "focalpixel": "569.7374 569.4216",
+      "principalpixel": "-4.595 0.813"
+    },
+    "halo_cameras_py": {
+      "OAK_OFFSET_FROM_TORSO": [
+        0.1034,
+        0.0039,
+        0.4893
+      ],
+      "OAK_CAM_PITCH_DOWN_DEG": 7.39
+    },
+    "runs": {
+      "calib_run": {
+        "pos_in_torso_m": [
+          0.1021,
+          0.001,
+          0.4916
+        ],
+        "pitch_down_deg": 7.12,
+        "yaw_left_deg": 0.93,
+        "roll_right_side_down_deg": -0.28
+      },
+      "calib_run3": {
+        "pos_in_torso_m": [
+          0.1047,
+          0.0067,
+          0.487
+        ],
+        "pitch_down_deg": 7.66,
+        "yaw_left_deg": -1.15,
+        "roll_right_side_down_deg": -0.39
+      }
+    }
+  }
+}

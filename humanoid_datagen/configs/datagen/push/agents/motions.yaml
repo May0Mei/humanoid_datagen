@@ -1,0 +1,18 @@
+# @package _global_
+# Stage motions (kimodo env): Kimodo candidates per prior from kimodo.txt.
+#   python humanoid_datagen/scripts/datagen.py --config_name datagen/push/agents/motions
+defaults:
+  - base
+  - _self_
+
+stage:
+  _target_: humanoid_datagen.datagen_pipelines.shared.kimodo.MotionCandidates
+  kimodo:
+    device: cuda                     # cuda | cpu (login node: encoding in its own process, <= 6 motions per call)
+    n: 24
+    subdir: motion_candidates
+    prefix: c
+    duration: 5.0
+    steps: 100
+    seed: 0
+    emb_dir: tmp/push_box/kimodo_emb_motions

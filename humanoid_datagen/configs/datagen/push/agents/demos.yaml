@@ -1,0 +1,42 @@
+# @package _global_
+# Stage demos: physics demos per finalized agent scene (spots x lead-in motions, SONIC, OAK-1 renders),
+# accepted when the push passes and the hands did it (hand_rule).
+#   python humanoid_datagen/scripts/datagen.py --config_name datagen/push/agents/demos
+defaults:
+  - base
+  - _self_
+
+stage:
+  _target_: humanoid_datagen.datagen_pipelines.shared.datagen.PhysicsDemos
+  out_root: outputs/push_box/datagen/ours
+  reuse_root: null                               # an earlier run's out_root: its demos are reused (hand rule re-checked)
+  motion_allow: null                             # {scene: [motion names]} json: run only these motions; null = all
+  scenes: null                                   # all passed scenes; or a list of run names
+  # step 2: spots
+  n_spots: 5                                     # the agent's spot (when clear) + sampled spots
+  travel: 0.5                                    # lead-in pelvis travel (= the leadin stage's travel)
+  back_margin: 0.35                              # free floor behind the standing pelvis
+  corridor_push_len: 1.0                         # free floor beyond the object (= eval tasks.corridor_push_len)
+  corridor_margin: 0.3                           # plus this margin
+  spot_min_sep: 0.6                              # a new spot is >= 0.6 m from earlier spots ...
+  spot_min_dyaw: 45                              # ... or pushes >= 45 deg differently
+  spot_max_tries: 20000
+  # top-up (2026-11-22): more spots until every scene has target_per_scene accepted demos (as HALO's 50 per scene)
+  target_per_scene: 55                           # 50 before; matched export spreads 2,376 over fewer scenes
+  topup_max_spots: 40                            # extra spots per scene at most (20 before; counts the v2 run's)
+  topup_sep_relax: [1.0, 0.5, 0.0]               # spot_min_sep / spot_min_dyaw scaled down when no spot fits
+  topup_spot_tries: 20000                        # sampling tries per relax step (crowded rooms: ~1e-4 hit rate)
+  dead_after: 5                                  # a motion with 0 accepted after this many demos is not tried again
+  # step 4: demos (jitter as datagen v1)
+  start_jitter_m: 0.15
+  yaw_jitter_deg: 8
+  physics_jitter: 0.4                            # mass and friction x U(0.6, 1.4) around the agent's own values
+                                                 # (0.25 before the 2026-11-22 top-up; demos record their value)
+  max_tries: 3                                   # jitter draws per (spot, motion)
+  seam_skip_s: 0.2                               # lead-in checks stop this long before the motion starts
+  max_pre_force: 5.0                             # N, hand-object force allowed before the motion starts
+  max_object_shift: 0.2                          # m, object moved ahead when the lead-in's bend reaches into it
+  tail_s: 1.0
+  seed: 0
+  # step 5: render
+  video_quality: 7

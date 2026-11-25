@@ -1,0 +1,25 @@
+# @package _global_
+# Stage scenes, text prior: identical sessions, tools, budget and permissions, but no video (prior/ holds wan.txt
+# as the scene brief and kimodo.txt).
+#   python humanoid_datagen/scripts/datagen.py --config_name datagen/push/agents_text/scenes   [dry_run: true]
+defaults:
+  - /datagen/push/agents/scenes
+  - base
+  - _self_
+
+stage:
+  jobs:
+    push:
+      with_video: false
+  resume:                                    # usage limit: wait for the reset, then continue the stopped sessions
+    max_waits: 10
+    prompt: "Continue /push-scene out={run_dir} prior=text where you left off (the session was interrupted by a usage limit). Check what is already in the run dir, then finish and finalize."
+
+  claude:
+    prompt: "/push-scene out={run_dir} prior=text"
+    isolate:
+      runtime_dir: tmp/push_box/agent_runtime_text     # own copy: each batch rebuilds its runtime at start
+    deny_extra:
+      - "Read(//**/*.mp4)"
+      - "Read(//{run_dir}/prior_frames/**)"
+      - "Read(//{repo}/outputs/push_box/scenes/**)"     # the video arm's runs

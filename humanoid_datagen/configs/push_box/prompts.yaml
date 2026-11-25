@@ -1,8 +1,0 @@
-# @package _global_
-# Push-task priors from the written prompt list (humanoid_datagen/push_box/prompts.py):
-#   python -m humanoid_datagen.push_box.prompts --config_name push_box/prompts
-# then videos + motions on the GPU: sbatch slurm_scripts/data/push_priors.sh push_box/prompts
-#                                   sbatch slurm_scripts/data/push_motions.sh push_box/motions_1000
-prompts_file: humanoid_datagen/configs/push_box/prompts_1000.jsonl   # 1000 hand-written prompts, 18 object types
-out_root: outputs/push_box/priors_1000
-seed: 0                     # prior-id order and Kimodo phrasing only; the prompts are fixed

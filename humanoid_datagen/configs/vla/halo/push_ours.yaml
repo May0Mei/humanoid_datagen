@@ -1,0 +1,50 @@
+# Trained on 4 GPUs as push_halo_infinigen: data.batch_size is per GPU (64 x 4 = the 256 global batch).
+#   python humanoid_datagen/scripts/train.py --config_name train/push/halo_ours
+# HALO generator on the matched push demos of the ours arm (export: train/push/export). Same model and
+# optimisation as the walk-to runs; every arm gets the same demo count and object mix, so the same budget.
+experiment_name: "halo_push_ours"
+seed: 42
+device: "cuda"
+
+data:
+  data_dir: "outputs/halo_data/push/ours"
+  image_size: [224, 224]
+  trajectory_length: 150
+  train_split: 0.98
+  batch_size: 64              # per GPU: 4 GPUs x 64 = the global 256 of push_halo_infinigen
+  num_workers: 0
+  pin_memory: true
+  normalize_motion: true
+  cache_frames: true          # every rank holds a copy: 4 x ~85 GB (train_halo_ddp.sh: 400G)
+  streaming_chunk_size: 0
+  cold_start_augment: true
+
+model:
+  vlm_backbone: "qwen3.5-2b"
+  vlm_frozen: true
+  vlm_dtype: "bfloat16"
+  vlm_vision_trainable: false
+  cond_pos_embed: true
+  max_cond_tokens: 96
+  vlm_gpu_preprocess: true
+  num_inference_steps: 15
+  hidden_dim: 512
+  num_decoder_layers: 8
+  num_heads: 8
+  dropout: 0.1
+  trajectory_length: 150
+  output_dim: 36
+  inpaint_prev_chunk: true
+  prev_chunk_frames: 15
+
+training:
+  num_epochs: 50
+  accumulation_steps: 1
+  learning_rate: 0.0003
+  vlm_lr: 0.00001
+  weight_decay: 0.01
+  betas: [0.9, 0.999]
+  max_grad_norm: 1.0
+  checkpoint_dir: "outputs/checkpoints/vla/halo_push_ours"
+  checkpoint_every: 5
+  eval_every: 0

@@ -1,0 +1,10 @@
+# @package _global_
+# Stage demos, text prior.
+#   python humanoid_datagen/scripts/datagen.py --config_name datagen/push/agents_text/demos
+defaults:
+  - /datagen/push/agents/demos
+  - base
+  - _self_
+
+stage:
+  out_root: outputs/push_box/datagen/text

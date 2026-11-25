@@ -1,0 +1,53 @@
+# 4-GPU DDP (train_halo_ddp.sh): per-GPU batch 64 x 4 = 256 global. (The 1-GPU variant and train_halo.sh are in cache/push_oneoffs/.)
+# HALO generator on the HALO-baseline push data: HALO's own pipeline (Infinigen scenes, Kimodo approach + v4 push
+# clip, motion_check gate, MuJoCo render with the calibrated OAK-1 fisheye), 50 scenes x 50 episodes, the 2,376
+# that pass the gate (docs/push_box.md, "HALO data-generation baseline"). Clean renders (no cam_fx).
+# Same model and optimisation as push_procthor / push_ours / push_text; only the data and checkpoint dirs differ.
+#   python humanoid_datagen/scripts/train.py --config_name train/push/export_halo_infinigen
+#   python humanoid_datagen/scripts/train.py --config_name train/push/halo_halo_infinigen
+experiment_name: "halo_push_halo_infinigen"
+seed: 42
+device: "cuda"
+
+data:
+  data_dir: "outputs/halo_data/push/halo_infinigen"
+  image_size: [224, 224]
+  trajectory_length: 150
+  train_split: 0.98
+  batch_size: 64              # per GPU: 4 GPUs x 64 = the global 256 of push_halo_infinigen / the other arms
+  num_workers: 0
+  pin_memory: true
+  normalize_motion: true
+  cache_frames: true          # every rank holds a copy: 4 x ~79 GB (train_halo_ddp.sh: 400G)
+  streaming_chunk_size: 0
+  cold_start_augment: true
+
+model:
+  vlm_backbone: "qwen3.5-2b"
+  vlm_frozen: true
+  vlm_dtype: "bfloat16"
+  vlm_vision_trainable: false
+  cond_pos_embed: true
+  max_cond_tokens: 96
+  vlm_gpu_preprocess: true
+  num_inference_steps: 15
+  hidden_dim: 512
+  num_decoder_layers: 8
+  num_heads: 8
+  dropout: 0.1
+  trajectory_length: 150
+  output_dim: 36
+  inpaint_prev_chunk: true
+  prev_chunk_frames: 15
+
+training:
+  num_epochs: 50
+  accumulation_steps: 1
+  learning_rate: 0.0003
+  vlm_lr: 0.00001
+  weight_decay: 0.01
+  betas: [0.9, 0.999]
+  max_grad_norm: 1.0
+  checkpoint_dir: "outputs/checkpoints/vla/halo_push_halo_infinigen"
+  checkpoint_every: 5
+  eval_every: 0

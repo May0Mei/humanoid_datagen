@@ -1,0 +1,14 @@
+# @package _global_
+# Agent pipeline, push task, video prior (ours): what every stage config of this folder shares. A stage config extends
+# it and adds its `stage` block ({_target_: the Stage class, settings}).
+defaults:
+  - /task/push@task
+  - _self_
+
+stage:
+  prior: video                     # video (ours) | text (agents_text/)
+  priors_root: outputs/push_box/priors_1000
+  scenes_root: outputs/push_box/scenes
+  per_task: 4                      # priors per array task (SLURM_ARRAY_TASK_ID) in the prior stages
+  shard: 0                         # scene stages: this process's shard (or SLURM_ARRAY_TASK_ID / _COUNT)
+  num_shards: 1

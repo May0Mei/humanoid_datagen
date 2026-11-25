@@ -1,0 +1,22 @@
+# @package _global_
+# Stage leadin (kimodo env, GPU): a Kimodo walk-up from SONIC's standing pose into every selected motion
+# (prep, encode, generate in one run).
+#   python humanoid_datagen/scripts/datagen.py --config_name datagen/push/agents/leadin
+defaults:
+  - base
+  - _self_
+
+stage:
+  _target_: humanoid_datagen.datagen_pipelines.shared.leadin.LeadIns
+  device: cuda
+  priors: null                     # every prior with motions/
+  text_emb: outputs/push_box/leadin_text_emb.npz
+  travel: 0.5                      # m of pelvis travel, standing start -> the motion's frame 0 (HALO: ~0.5 m)
+  walk_speed: 0.55                 # HALO sit walk_speed (unicycle v_max); 0.5 m -> 28 frames
+  bend_frames: 30                  # free frames after the root path for the stand -> bend (1 s), as the HALO arm
+  walk_batch: 10                   # samples per motion, best by HALO's push_box gate
+  seam_k: 3                        # HALO seam_blend half-width at the lead-in -> motion seam
+  steps: 200
+  cfg: [2.0, 2.0]
+  tier: industry
+  seed: 0

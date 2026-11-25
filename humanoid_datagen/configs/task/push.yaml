@@ -1,0 +1,15 @@
+# The push task (tasks/push/task.py PushTask). Every datagen and eval config pulls it in (`- /task/push@task`), so
+# demo acceptance, the agent's tools and the eval share one pass rule.
+_target_: humanoid_datagen.tasks.push.task.PushTask
+pass_rule:                         # push succeeds: object >= min_push m along the push, tilt <= max_tilt_deg, no fall
+  min_push: 0.3
+  max_tilt_deg: 20.0
+hand_rule:                         # demos: the hands, not the legs, moved the object (reward.py attribution); null: off
+  min_hand_m: 0.3                  # hands moved it >= 0.3 m
+  max_leg_body_m: 0.1              # legs + torso moved it < 0.1 m
+  min_both_frac: 0.0               # one hand is enough (the both-hands share is still recorded)
+motion_fit:                        # a Kimodo candidate fits the object (motion selection)
+  min_top_clear: 0.05              # palms >= 5 cm below the object's top
+  min_palm_frac: 0.35              # palms >= 35% of the object's height
+  min_push: 1.0                    # m the hands travel (the videos' pushes are 1-2 m)
+approach_prompt: "a person walks up to {a} {object} and bends over to push it."   # Kimodo walk-up (lead-ins)

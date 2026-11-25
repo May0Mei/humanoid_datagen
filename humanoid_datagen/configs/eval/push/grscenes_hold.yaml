@@ -1,0 +1,29 @@
+# @package _global_
+# Push eval on GRScenes (T-third, gold standard): planner + GEAR-SONIC + full physics (humanoid_datagen/evaluators/grscenes.py).
+# Base config = the "hold" planner (robot stands still; the floor of the metric). Per-policy configs override planner.
+#   python humanoid_datagen/scripts/eval.py --config_name eval/push/grscenes_hold
+#   GPU (HALO): python humanoid_datagen/scripts/eval.py --config_name eval/push/grscenes_halo_<arm>
+defaults:
+  - /task/push@task
+  - _self_
+
+mode: run                          # the evaluator method: build | run | rescore | viz
+evaluator:
+  _target_: humanoid_datagen.evaluators.grscenes.GRScenesEval
+  task_ids: null              # list of task_ids = run only those (previews); null = every task
+
+  tasks:                       # the fixed test set (eval/push/build_grscenes draws it once): every policy
+                               # sees the same episodes
+    file: outputs/eval/push/tasks_grscenes_v3.jsonl
+
+  episode:
+    timeout_s: 12.0           # 10 s + the ~2 s walk-in from standing (datagen v2 lead-in)
+    settle_s: 1.0             # object settles with the robot held still before the episode (v2 runs: 0.3)
+    replan_s: 0.5              # planner call period (as the walk-to closed-loop eval)
+    terminate_on_fall: true
+
+
+  ego: {camera: oak1, calibrated: true, width: 640, height: 400, save_video: false}   # calibrated: 1280x800 fisheye (oak_cam)
+  seeds: [0]
+  planner: {_target_: humanoid_datagen.evaluators.grscenes.HoldPlanner}
+  results_root: outputs/eval/push/grscenes_v3/hold   # v3 tasks; v2 results stay in outputs/eval/push/grscenes/hold (runs resume by task_id: never mix the two)

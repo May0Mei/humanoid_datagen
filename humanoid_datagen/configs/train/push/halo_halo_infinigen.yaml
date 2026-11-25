@@ -1,0 +1,9 @@
+# @package _global_
+# Train the HALO generator (halo_infinigen arm) with HALO's unmodified trainer ($THIRD_PARTY_ROOT/ml-halo/generator) on the
+# HALO-format training config below (data.batch_size there is per GPU).
+#   python humanoid_datagen/scripts/train.py --config_name train/push/halo_halo_infinigen
+step:
+  _target_: humanoid_datagen.vla.train.HaloTrain
+  halo_config: humanoid_datagen/configs/vla/halo/push_halo_infinigen.yaml
+  gpus: 4                          # > 1: torchrun, one node
+  wandb_project: humanoid_datagen_vla
